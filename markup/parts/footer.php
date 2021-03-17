@@ -1,9 +1,7 @@
-<div class="footer mt-4">
+<footer class="mt-5">
     <div class="container">
-        <div class="share">
-            <div class="title text-center">
-                <h3>Compartí este micrositio</h3>
-            </div>
+        <div class="logo-arg-container d-flex justify-content-center justify-content-md-start">
+            <img src="/assets/images/logo_argentina_unida-blanco.svg" alt="Argentina Unida">
         </div>
     </div>
-</div>
+</footer>

@@ -508,6 +508,20 @@ p {
   line-height: 20px;
 }
 
+footer {
+  background-color: #37bbed;
+}
+
+footer .logo-arg-container {
+  padding: 30px 0 40px 0;
+  height: 150px;
+}
+
+footer .logo-arg-container img {
+  width: 288px;
+  height: 40px;
+}
+
 @media (min-width: 992px) {
   nav {
     height: 100px;
