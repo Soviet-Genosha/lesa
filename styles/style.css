@@ -1,0 +1,17 @@
+nav a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a.active{
+    background-color: #CDDC39;
+    color: #FFF !important;
+}
+
+.bb-lavanda{
+    border-bottom: #CDDC39 5px solid;
+}
+
+/* .centro{
+    font-size: 20em;
+} */
