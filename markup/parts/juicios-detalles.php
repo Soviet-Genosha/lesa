@@ -34,15 +34,13 @@
                     <td>{{j.cant_victimas}}</td>
                     <td>{{j.caus_rolsdh}}</td>
                     <td>{{j.estado_causa}}</td>
-
-
                 </tr>
             </tbody>
         </table>
-        <div class="see-more text-center">
+        <!-- <div class="see-more text-center">
             <button class="btn">
                 Mostrar 10 juicios más...
             </button>
-        </div>
+        </div> -->
     </div>
 </div>

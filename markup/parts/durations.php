@@ -12,8 +12,8 @@
                     ex ea commodo consequat. </p>
             </div>
             <div class="graphic mt-2">
-                <img src="../assets/images/mobile-graphic.png" alt="" class="d-block d-md-none img-fluid">
-                <img src="../assets/images/desktop-graphic-1.svg" alt="" class="d-none d-md-block img-fluid w-100">
+                <img src="/images/mobile-graphic.png" alt="" class="d-block d-md-none img-fluid">
+                <img src="/images/desktop-graphic-1.svg" alt="" class="d-none d-md-block img-fluid w-100">
             </div>
         </div>
         <div class="stages-average-years d-block d-md-none mt-3">
@@ -21,7 +21,7 @@
                 <h3>Promedio años etapas</h3>
             </div>
             <div class="graphic mt-2">
-                <img src="../assets/images/mobile-graphic-2.jpg" alt="" class="img-fluid">
+                <img src="/images/mobile-graphic-2.jpg" alt="" class="img-fluid">
             </div>
         </div>
         <div class="audience-average-hours d-block d-md-none mt-3">
@@ -36,7 +36,7 @@
                     ex ea commodo consequat. </p>
             </div>
             <div class="graphic mt-2">
-                <img src="../assets/images/mobile-graphic-2.jpg" alt="" class="img-fluid">
+                <img src="/images/mobile-graphic-2.jpg" alt="" class="img-fluid">
             </div>
         </div>
         <div class="d-none d-md-block">
@@ -54,10 +54,10 @@
                 </div>
                 <div class="d-flex justify-content-center">
                     <div class="graphic m-4">
-                        <img src="../assets/images/desktop-graphic-2.svg" alt="" class="img-fluid w-100">
+                        <img src="/images/desktop-graphic-2.svg" alt="" class="img-fluid w-100">
                     </div>
                     <div class="graphic m-4">
-                        <img src="../assets/images/desktop-graphic-2.svg" alt="" class="img-fluid w-100">
+                        <img src="/images/desktop-graphic-2.svg" alt="" class="img-fluid w-100">
                     </div>
                 </div>
             </div>

@@ -1,2 +1,4 @@
-# precioscovid
-Precios de referencia en compras estatales COVID19 Argentina
+# lesa
+Para ejecutar
+$ php -S localhost:8000
+

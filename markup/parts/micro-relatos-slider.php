@@ -2,7 +2,7 @@
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item position-relative active">
-                <img src="../assets/images/slider-img.jpg" class="d-block w-100" alt="...">
+                <img src="/images/slider-img.jpg" class="d-block w-100" alt="...">
                 <div class="slide-content position-absolute">
                     <div class="category">
                         <p>Micro relatos</p>
@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="carousel-item position-relative">
-                <img src="../assets/images/slider-img.jpg" class="d-block w-100" alt="...">
+                <img src="/images/slider-img.jpg" class="d-block w-100" alt="...">
                 <div class="slide-content position-absolute">
                     <div class="category">
                         <p>Micro relatos</p>
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="carousel-item position-relative">
-                <img src="../assets/images/slider-img.jpg" class="d-block w-100" alt="...">
+                <img src="/images/slider-img.jpg" class="d-block w-100" alt="...">
                 <div class="slide-content position-absolute">
                     <div class="category">
                         <p>Micro relatos</p>

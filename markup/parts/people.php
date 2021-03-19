@@ -12,11 +12,11 @@
                     ex ea commodo consequat. </p>
             </div>
             <div class="graphic mt-2 mt-md-5">
-                <img src="../assets/images/mobile-graphic-3.jpg" alt="" class="d-block d-md-none img-fluid">
-                <img src="../assets/images/desktop-graphic-3.svg" alt="" class="d-none d-md-block img-fluid mx-auto">
+                <img src="/images/mobile-graphic-3.jpg" alt="" class="d-block d-md-none img-fluid">
+                <img src="/images/desktop-graphic-3.svg" alt="" class="d-none d-md-block img-fluid mx-auto">
             </div>
             <div class="graphic d-block d-md-none mt-2">
-                <img src="../assets/images/mobile-graphic-4.jpg" alt="" class="img-fluid">
+                <img src="/images/mobile-graphic-4.jpg" alt="" class="img-fluid">
             </div>
         </div>
     </div>

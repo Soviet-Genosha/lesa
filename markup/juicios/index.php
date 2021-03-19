@@ -30,7 +30,7 @@
                     <div class="case card my-2 m-md-3">
                         <a href="./case/index.php" target="_self">
                             <div class="img-container">
-                                <img src="../assets/images/juicio-1.jpg" class="card-img-top img-fluid" alt="...">
+                                <img src="/images/juicio-1.jpg" class="card-img-top img-fluid" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Esma IV</h5>
@@ -40,7 +40,7 @@
                     <div class="case card my-2 m-md-3">
                         <a href="./case/index.php" target="_self">
                             <div class="img-container">
-                                <img src="../assets/images/juicio-2.jpg" class="card-img-top img-fluid" alt="...">
+                                <img src="/images/juicio-2.jpg" class="card-img-top img-fluid" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">ESMA Delitos Sexuales</h5>
@@ -50,7 +50,7 @@
                     <div class="case card my-2 m-md-3">
                         <a href="./case/index.php" target="_self">
                             <div class="img-container">
-                                <img src="../assets/images/juicio-3.jpg" class="card-img-top img-fluid" alt="...">
+                                <img src="/images/juicio-3.jpg" class="card-img-top img-fluid" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Hogar de Belen</h5>
@@ -60,7 +60,7 @@
                     <div class="case card my-2 m-md-3">
                         <a href="./case/index.php" target="_self">
                             <div class="img-container">
-                                <img src="../assets/images/juicio-4.jpg" class="card-img-top img-fluid" alt="...">
+                                <img src="/images/juicio-4.jpg" class="card-img-top img-fluid" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">La Fronterita</h5>
@@ -70,7 +70,7 @@
                     <div class="case card my-2 m-md-3">
                         <a href="./case/index.php" target="_self">
                             <div class="img-container">
-                                <img src="../assets/images/juicio-5.jpg" class="card-img-top img-fluid" alt="...">
+                                <img src="/images/juicio-5.jpg" class="card-img-top img-fluid" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">La Veloz del Norte</h5>
@@ -80,7 +80,7 @@
                     <div class="case card my-2 m-md-3">
                         <a href="./case/index.php" target="_self">
                             <div class="img-container">
-                                <img src="../assets/images/juicio-6.jpg" class="card-img-top img-fluid" alt="...">
+                                <img src="/images/juicio-6.jpg" class="card-img-top img-fluid" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Los Pozos 1</h5>
@@ -90,7 +90,7 @@
                     <div class="case card my-2 m-md-3">
                         <a href="./case/index.php" target="_self">
                             <div class="img-container">
-                                <img src="../assets/images/juicio-1.jpg" class="card-img-top img-fluid" alt="...">
+                                <img src="/images/juicio-1.jpg" class="card-img-top img-fluid" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Esma IV</h5>
@@ -100,7 +100,7 @@
                     <div class="case card my-2 m-md-3">
                         <a href="./case/index.php" target="_self">
                             <div class="img-container">
-                                <img src="../assets/images/juicio-2.jpg" class="card-img-top img-fluid" alt="...">
+                                <img src="/images/juicio-2.jpg" class="card-img-top img-fluid" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">ESMA Delitos Sexuales</h5>
@@ -110,7 +110,7 @@
                     <div class="case card my-2 m-md-3">
                         <a href="./case/index.php" target="_self">
                             <div class="img-container">
-                                <img src="../assets/images/juicio-3.jpg" class="card-img-top img-fluid" alt="...">
+                                <img src="/images/juicio-3.jpg" class="card-img-top img-fluid" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Hogar de Belen</h5>
@@ -120,7 +120,7 @@
                     <div class="case card my-2 m-md-3">
                         <a href="./case/index.php" target="_self">
                             <div class="img-container">
-                                <img src="../assets/images/juicio-4.jpg" class="card-img-top img-fluid" alt="...">
+                                <img src="/images/juicio-4.jpg" class="card-img-top img-fluid" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">La Fronterita</h5>
@@ -130,7 +130,7 @@
                     <div class="case card my-2 m-md-3">
                         <a href="./case/index.php" target="_self">
                             <div class="img-container">
-                                <img src="../assets/images/juicio-5.jpg" class="card-img-top img-fluid" alt="...">
+                                <img src="/images/juicio-5.jpg" class="card-img-top img-fluid" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">La Veloz del Norte</h5>
@@ -140,7 +140,7 @@
                     <div class="case card my-2 m-md-3">
                         <a href="./case/index.php" target="_self">
                             <div class="img-container">
-                                <img src="../assets/images/juicio-6.jpg" class="card-img-top img-fluid" alt="...">
+                                <img src="/images/juicio-6.jpg" class="card-img-top img-fluid" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Los Pozos 1</h5>

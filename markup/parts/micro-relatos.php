@@ -9,7 +9,7 @@
                     <a href="">
                         <div class="video large d-flex justify-content-center align-items-center">
                             <div class="player">
-                                <img src="../assets/images/play.svg" alt="" class="img-fluid">
+                                <img src="/images/play.svg" alt="" class="img-fluid">
                             </div>
                         </div>
                     </a>
@@ -21,7 +21,7 @@
                         <a href="">
                             <div class="video medium d-flex justify-content-center align-items-center">
                                 <div class="player">
-                                    <img src="../assets/images/play.svg" alt="" class="img-fluid">
+                                    <img src="/images/play.svg" alt="" class="img-fluid">
                                 </div>
                             </div>
                         </a>
@@ -32,7 +32,7 @@
                         <a href="">
                             <div class="video small d-flex justify-content-center align-items-center">
                                 <div class="player">
-                                    <img src="../assets/images/play.svg" alt="" class="img-fluid">
+                                    <img src="/images/play.svg" alt="" class="img-fluid">
                                 </div>
                             </div>
                         </a>
@@ -43,7 +43,7 @@
                         <a href="">
                             <div class="video small d-flex justify-content-center align-items-center">
                                 <div class="player">
-                                    <img src="../assets/images/play.svg" alt="" class="img-fluid">
+                                    <img src="/images/play.svg" alt="" class="img-fluid">
                                 </div>
                             </div>
                         </a>
