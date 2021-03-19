@@ -1,51 +1,26 @@
-<div class="agenda">
+<div class="agenda" ng-controller="AgendaController as homeCtrl">
     <div class="container">
         <div class="title text-md-center mt-md-5">
             <h3>Juicios activos: próximas audiencias</h3>
         </div>
         <div class="agenda-content d-flex justify-content-between justify-content-md-center">
-            <div class="item text-center m-md-5">
+             <div ng-show="loading">
+                            <progress class="loader-mail pure-material-progress-linear" />
+                        </div>
+            <div class="item text-center m-md-5" ng-repeat="a in agenda">
                 <div class="type">
-                    <p>Juicio</p>
+                    {{a.requerimiento}}
+                    <p>{{a.caus_nombre_vulgar}}</p>
                 </div>
                 <div class="stage">
-                    <p>etapa</p>
+                    <p>{{a.estado_causa}}</p>
                 </div>
                 <div class="date">
-                    <p>Martes 11 am</p>
+                    <p>{{a.audiencia}}</p>
                 </div>
-                <div class="link">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">Link</a>
-                </div>
-            </div>
-            <div class="item text-center m-md-5">
-                <div class="type">
-                    <p>Juicio</p>
-                </div>
-                <div class="stage">
-                    <p>etapa</p>
-                </div>
-                <div class="date">
-                    <p>Martes 11 am</p>
-                </div>
-                <div class="link">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">Link</a>
+                <div class="link" ng-show="a.transmision">
+                    <a ng-href="{{a.transmision}}" target="_blank" rel="noopener noreferrer">Ver</a>
                 </div>
             </div>
-            <div class="item text-center m-md-5">
-                <div class="type">
-                    <p>Juicio</p>
-                </div>
-                <div class="stage">
-                    <p>etapa</p>
-                </div>
-                <div class="date">
-                    <p>Martes 11 am</p>
-                </div>
-                <div class="link">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">Link</a>
-                </div>
-            </div>
-        </div>
     </div>
 </div>

@@ -1,6 +1,5 @@
 'use strict';
-angular
-    .module('app.core')
+genApp
     .controller('FichaController', function($scope, medService) {
         $scope.medService = medService;
     });

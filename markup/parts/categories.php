@@ -1,4 +1,4 @@
-<div class="categories mt-4 mt-md-5">
+<div class="categories mt-4 mt-md-5" ng-controller="CategoriesController as homeCtrl">
     <div class="container">
         <div class="title text-md-center">
             <h3>Juicios activos Categorías</h3>
@@ -10,12 +10,12 @@
                 aliquip
                 ex ea commodo consequat. </p>
         </div>
-        <div class="graphic d-block d-md-none mt-2">
-            <img src="../assets/images/mobile-graphic-5.jpg" alt="" class="img-fluid">
-        </div>
-        <div class="graphic mt-2">
-            <img src="../assets/images/mobile-graphic-6.jpg" alt="" class="d-block d-md-none img-fluid">
-            <img src="../assets/images/desktop-graphic-6.svg" alt="" class="d-none d-md-block img-fluid mx-auto">
+         <div ng-show="loading">
+                            <progress class="loader-mail pure-material-progress-linear" />
+                        </div>
+        <div class="g" ng-repeat="c in categories" ng-hide="loading">
+            <h1> {{c.cantidad}}</h1>
+            <p>{{c.descripcion}} </p>
         </div>
     </div>
 </div>

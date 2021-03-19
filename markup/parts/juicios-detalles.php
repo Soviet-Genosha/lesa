@@ -1,4 +1,4 @@
-<div class="juicios-detalle mt-5">
+<div class="juicios-detalle mt-5" ng-controller="JuiciosController as homeCtrl">
     <div class="container">
         <table class="table">
             <colgroup>
@@ -10,72 +10,32 @@
             <thead>
                 <tr>
                     <th scope="col">Nombre del juicio</th>
-                    <th scope="col"><span>Jurisdicción</span> <img src="../assets/images/sort-table.svg" alt="" /></th>
-                    <th scope="col"><span>Días de audiencia</span> <img src="../assets/images/sort-table.svg" alt="" />
+                    <th scope="col"><span>Jurisdicción</span> <img src="/images/sort-table.svg" alt="" /></th>
+                    <th scope="col"><span>Imputados</span> <img src="/images/sort-table.svg" alt="" />
                     </th>
-                    <th scope="col"><span>Velocidad</span> <img src="../assets/images/sort-table.svg" alt="" /></th>
+                    <th scope="col"><span>Testigos</span> <img src="/images/sort-table.svg" alt="" />
+                    </th>
+                    
+                    <th scope="col"><span>Victimas</span> <img src="/images/sort-table.svg" alt="" />
+                    </th>
+                    <th scope="col"><span>Rol</span> <img src="/images/sort-table.svg" alt="" />
+                    </th>
+                    <th scope="col"><span>Estado</span> <img src="/images/sort-table.svg" alt="" />
+                    </th>
+                    
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Juicio</td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                </tr>
-                <tr>
-                    <td>Juicio</td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                </tr>
-                <tr>
-                    <td>Juicio</td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                </tr>
-                <tr>
-                    <td>Juicio</td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                </tr>
-                <tr>
-                    <td>Juicio</td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                </tr>
-                <tr>
-                    <td>Juicio</td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                </tr>
-                <tr>
-                    <td>Juicio</td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                </tr>
-                <tr>
-                    <td>Juicio</td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                </tr>
-                <tr>
-                    <td>Juicio</td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                </tr>
-                <tr>
-                    <td>Juicio</td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
+                <tr ng-repeat="j in juicios">
+                    <td>{{j.caus_nombre_vulgar}}</td>
+                    <td>{{j.jurisdiccion}}</td>
+                    <td>{{j.cant_imputados}}</td>
+                    <td>{{j.testigos}}</td>
+                    <td>{{j.cant_victimas}}</td>
+                    <td>{{j.caus_rolsdh}}</td>
+                    <td>{{j.estado_causa}}</td>
+
+
                 </tr>
             </tbody>
         </table>

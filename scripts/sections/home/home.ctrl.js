@@ -2,8 +2,7 @@
 
 
 'use strict';
-angular
-    .module('app.core')
+genApp
     .controller('HomeController', function($scope, medService) {
         $scope.medService = medService;
         $scope.loading = true;
