@@ -54,7 +54,7 @@ genApp
         }
     },
     series: [{
-        name: 'Main',
+        name: 'Juicios',
         data:$scope.categories
       }]
   });
