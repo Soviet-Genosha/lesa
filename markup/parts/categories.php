@@ -13,9 +13,8 @@
          <div ng-show="loading">
                             <progress class="loader-mail pure-material-progress-linear" />
                         </div>
-        <div class="g" ng-repeat="c in categories" ng-hide="loading">
-            <h1> {{c.cantidad}}</h1>
-            <p>{{c.descripcion}} </p>
+        <div id="categories" class="g categories" ng-hide="loading">
+           
         </div>
     </div>
 </div>
