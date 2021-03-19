@@ -32,12 +32,12 @@
         <?php include_once('./markup/parts/banner.php');  ?>
         <?php include_once('./markup/parts/metrics.php');  ?>
         <?php include_once('./markup/parts/agenda.php');  ?>
-        <!-- <?php include_once('./markup/parts/durations.php');  ?> -->
-        <!-- <?php include_once('./markup/parts/people.php');  ?> -->
+        <?php include_once('./markup/parts/durations.php');  ?> 
+        <?php include_once('./markup/parts/people.php');  ?>
         <?php include_once('./markup/parts/categories.php');  ?>
-        <?php include_once('./markup/parts/juicios-detalles.php');  ?> 
-        <!-- <?php include_once('./markup/parts/condemned.php');  ?> -->
-        <!-- <?php include_once('./markup/parts/micro-relatos.php');  ?> -->
+        <?php include_once('./markup/parts/juicios-detalles.php'); ?> 
+        <?php include_once('./markup/parts/condemned.php');  ?>
+        <?php include_once('./markup/parts/micro-relatos.php');  ?> 
         <?php include_once('./markup/parts/footer.php');  ?>
 
                 
