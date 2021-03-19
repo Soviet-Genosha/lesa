@@ -78,7 +78,7 @@ p {
 }
 
 .banner .img-container {
-  background-image: url("./assets/images/banner.jpg");
+  background-image: url("assets/images/banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
