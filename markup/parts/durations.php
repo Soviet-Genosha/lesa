@@ -54,10 +54,7 @@
                 </div>
                 <div class="d-flex justify-content-center">
                     <div class="graphic m-4">
-                        <img src="/images/desktop-graphic-2.svg" alt="" class="img-fluid w-100">
-                    </div>
-                    <div class="graphic m-4">
-                        <img src="/images/desktop-graphic-2.svg" alt="" class="img-fluid w-100">
+                       <h1> Graph </h1>
                     </div>
                 </div>
             </div>
