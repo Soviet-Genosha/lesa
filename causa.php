@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <html lang="en" class="js-focus-visible" data-js-focus-visible="">
 <head>
     <meta charset="utf-8">
@@ -34,33 +31,58 @@
 
 </head>
 <body ng-app="genApp">
-    <div class="root">
+    <div class="root" ng-controller="DetalleController as detalle">
         <?php include_once('./markup/parts/header.php');  ?>
-        <div class="cases-grid py-4">
-            <div class="container">
-                <div class="title">
-                    <h1>Acá va un título</h1>
+        <div class="case-description">
+            <div class="case-banner">
+                <div class="img-container">
                 </div>
-                <div class="subtitle">
-                    <p>Acá va una bajada</p>
-                </div>
-                <section ng-controller="HomeController as homeController">
-                    <div class="cases-container d-flex flex-column flex-md-row flex-wrap justify-content-center mt-3" ng-repeat="j in juicios">
-
-                        <div class="case card my-2 m-md-3">
-                            <a ng-href="./causa.php/?id={{j.caus_id}}" target="_self">
-                                <div class="img-container">
-                                    <img src="/images/juicio-1.jpg" class="card-img-top img-fluid" alt="...">
+            </div>
+            <div class="case-body">
+                <div class="container py-4">
+                    <div class="title text-center">
+                        <h1>{{juicio.caus_nombre_vulgar}}</h1>
+                    </div>
+                    <div class="stage text-center">
+                        <p>{{juicio.sede}}</p>
+                    </div>
+                    <div class="subtitle">
+                        <p>{{juicio.caus_causa}} </p>
+                    </div>
+                    <div class="info mt-md-5">
+                        <div class="card-info mt-3">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="icon my-2 mx-3">
+                                    <img src="../../assets/images/people-icon.svg" alt="" class="img-fluid">
                                 </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">{{j.caus_caratula}}</h5>
+                                <div class="content">
+                                    <div class="title">
+                                        <h2>{{juicio.cant_victimas}} Víctimas</h2>
+                                    </div>
+                                   <!--  <div class="read-more">
+                                        <a href="">Ver nombres y apellidos de las <span>víctimas</span></a>
+                                    </div> -->
                                 </div>
-                            </a>
+                            </div>
                         </div>
+                        <div class="card-info mt-3">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="icon my-2 mx-3">
+                                    <img src="../../assets/images/justice-icon.svg" alt="" class="img-fluid">
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <h2>{{juicio.cant_imputados}} Imputados</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
+            </div>
+
         </div>
-        <?php include_once('./markup/parts/footer.php');  ?>
+           <?php include_once('./markup/parts/footer.php');  ?>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
@@ -73,24 +95,23 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/satellizer/dist/satellizer.js"></script>
-    <script src="bower_components/fi-rut/dist/fi-rut.js"></script>
-    <script src="scripts/app.routes.js"></script>
-    <script src="scripts/app.core.js"></script>
-    <script src="scripts/app.services.js"></script>
-    <script src="scripts/app.auth.js"></script>
-    <script src="scripts/app.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <script src="../bower_components/satellizer/dist/satellizer.js"></script>
+    <script src="../bower_components/fi-rut/dist/fi-rut.js"></script>
+    <script src="../scripts/app.routes.js"></script>
+    <script src="../scripts/app.core.js"></script>
+    <script src="../scripts/app.services.js"></script>
+    <script src="../scripts/app.auth.js"></script>
+    <script src="../scripts/app.js"></script>
 
-    <script src="scripts/sections/juicios/home.ctrl.js"></script>
-    <script src="scripts/sections/juicios/detalle.ctrl.js"></script>
-    <script src="scripts/services/med.fct.js"></script>
+    <script src="../scripts/sections/juicios/detalle.ctrl.js"></script>
+    <script src="../scripts/services/med.fct.js"></script>
     <!-- ======================================================================= -->
     <!-- DIRECTIVES -->
     <!-- ======================================================================= -->
     
-  <script type="text/javascript" src="scripts/main.js"></script>
+  <script type="text/javascript" src="../scripts/main.js"></script>
   
 
 </body>

@@ -73,7 +73,6 @@
     <script src="scripts/sections/home/agenda.ctrl.js"></script>
     <script src="scripts/sections/home/categories.ctrl.js"></script>
     <script src="scripts/sections/home/juicios.ctrl.js"></script>
-    <script src="scripts/sections/home/about.ctrl.js"></script>
     <script src="scripts/services/med.fct.js"></script>
     <!-- ======================================================================= -->
     <!-- DIRECTIVES -->

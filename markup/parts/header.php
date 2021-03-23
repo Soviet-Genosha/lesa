@@ -19,7 +19,7 @@
                 </a>
             </div>
             <div class="menu-item">
-                <a href="/juicios/index.php" target="_self" type="button" class="btn">
+                <a href="/juicios.php" target="_self" type="button" class="btn">
                     Juicios
                 </a>
             </div>
