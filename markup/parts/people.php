@@ -12,8 +12,17 @@
                     ex ea commodo consequat. </p>
             </div>
             <div class="graphic mt-2 mt-md-5">
-                <img src="/images/mobile-graphic-3.jpg" alt="" class="d-block d-md-none img-fluid">
-                <img src="/images/desktop-graphic-3.svg" alt="" class="d-none d-md-block img-fluid mx-auto">
+            <div id="observablehq-chart-53e841e4"></div>
+<p>Credit: <a href="https://observablehq.com/@rusosnith/untitled/2"> by andres Snitcofsky</a></p>
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@rusosnith/untitled/2.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-53e841e4"));
+});
+</script>
+              
             </div>
             <div class="graphic d-block d-md-none mt-2">
                 <img src="/images/mobile-graphic-4.jpg" alt="" class="img-fluid">
