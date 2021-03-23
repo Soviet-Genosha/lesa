@@ -9,31 +9,31 @@
             </colgroup>
             <thead>
                 <tr>
-                    <th scope="col">Nombre del juicio</th>
-                    <th scope="col"><span>Jurisdicción</span> <img src="/images/sort-table.svg" alt="" /></th>
-                    <th scope="col"><span>Imputados</span> <img src="/images/sort-table.svg" alt="" />
+                    <th scope="col"><span>Jurisdicción</span> </th>
+                    <th scope="col">Juicio</th>
+                    <th scope="col"><span>Imputados</span>
                     </th>
-                    <th scope="col"><span>Testigos</span> <img src="/images/sort-table.svg" alt="" />
+                    <th scope="col"><span>Victimas</span> 
+                    </th>
+                    <th scope="col"><span>Testigos</span> 
                     </th>
                     
-                    <th scope="col"><span>Victimas</span> <img src="/images/sort-table.svg" alt="" />
+                    <th scope="col"><span>Rol</span> 
                     </th>
-                    <th scope="col"><span>Rol</span> <img src="/images/sort-table.svg" alt="" />
-                    </th>
-                    <th scope="col"><span>Estado</span> <img src="/images/sort-table.svg" alt="" />
+                    <th scope="col"><span>Ficha</span> 
                     </th>
                     
                 </tr>
             </thead>
             <tbody>
                 <tr ng-repeat="j in juicios">
-                    <td>{{j.caus_nombre_vulgar}}</td>
                     <td>{{j.jurisdiccion}}</td>
+                    <td>{{j.caus_nombre_vulgar}}</td>
                     <td>{{j.cant_imputados}}</td>
-                    <td>{{j.testigos}}</td>
                     <td>{{j.cant_victimas}}</td>
-                    <td>{{j.caus_rolsdh}}</td>
-                    <td>{{j.estado_causa}}</td>
+                    <td>{{j.testigos}}</td>
+                    <td>{{j.caus_rolsdh?"SI":""}}</td>
+                    <td><a href="#">Ver ficha</a></td>
                 </tr>
             </tbody>
         </table>
