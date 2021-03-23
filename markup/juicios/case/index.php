@@ -17,7 +17,7 @@
 
 <body>
     <div class="root">
-        <?php include_once('../../parts/header.php');  ?>
+        <?php include_once('./markup/parts/header.php');  ?>
         <div class="case-description">
             <div class="case-banner">
                 <div class="img-container">
@@ -91,7 +91,7 @@
             </div>
 
         </div>
-        <?php include_once('../../parts/footer.php');  ?>
+        <?php include_once('./markup/parts/footer.php');  ?>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
