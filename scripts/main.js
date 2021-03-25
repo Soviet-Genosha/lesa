@@ -1,5 +1,5 @@
 
-var ES = d3.formatDefaultLocale({
+var ES = d3.timeFormatDefaultLocale({
     "decimal": ",",
     "thousands": ".",
     "grouping": [3],

@@ -60,6 +60,19 @@ p {
   outline: none;
 }
 
+ul.nav.nav-pills.nav-stacked {
+  display: block;
+}
+
+ul.nav.nav-pills.nav-stacked li a{
+  padding: 3px 38px;
+    display: block;
+    text-align: center;
+
+}
+
+
+
 .menu-item a {
   color: var(--title-color);
   font-family: "Encode Sans", sans-serif;
@@ -683,4 +696,9 @@ footer .logo-arg-container img {
     font-size: 16px;
     line-height: 20px;
   }
+}
+
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
 }
