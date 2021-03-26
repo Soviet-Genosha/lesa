@@ -702,3 +702,9 @@ footer .logo-arg-container img {
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
+
+
+.jumbotron{
+  padding: 3px 0px 30px;
+  color: black;
+}
