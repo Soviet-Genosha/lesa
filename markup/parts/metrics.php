@@ -8,13 +8,13 @@
                     </div>
                 </div>
 
-    <div class="container d-flex justify-content-between" ng-hide="loading">
+    <div class="container d-flex justify-content-between" ng-cloak>
         <div class="metric text-center" ng-repeat="m in metrics">
             <div class="quantity">
-                <p>{{m.cantidad}}</p>
+                <p>{{m.titulo}}</p>
             </div>
             <div class="info">
-                <p>{{m.descripcion}}</p>
+                <p>{{m.dato}}</p>
             </div>
         </div>
     </div>

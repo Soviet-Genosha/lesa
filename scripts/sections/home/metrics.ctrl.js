@@ -8,17 +8,17 @@ genApp
         $scope.loading = true;
         $scope.ap = {};
         $scope.metrics = [];
-        $http.get(URL_PREFIX + 'causas/listado/estado?limit=200&order=desc&campo=requerimiento')
+        $http.get(URL_PREFIX + '/header')
         .then(function(response){
           
           $scope.loading = false;
-          $scope.metrics = response.data.resultado.causas.filter(function(c){
-            return c.cantidad > 0;
-          });
-          console.log();
-          console.log('ok');
+          $scope.metrics = response.data.resultado.header.map(function(d){ return {
+                                    "titulo" :  d.dato.slice(3,d.dato.indexOf( ' ', d.dato.indexOf( ' ' ) + 1 )),
+                                    "dato" : d.dato.slice(d.dato.indexOf( ' ', d.dato.indexOf( ' ' ) + 1 ))
+                                  }
+                                  });
+
         },function(e){
-          console.log('ko')
           $scope.loading = false;
         });
        
