@@ -1,6 +1,13 @@
 <div class="juicios-detalle mt-5" ng-controller="JuiciosController as homeCtrl">
     <div class="container">
-        <table class="table table-striped table-hover table-responsive ">
+             <div class="title text-md-center">
+                <h3>Los juicios en detalle</h3>
+            </div>
+            <div class="subtitle mt-md-4">
+                <p>La dimensión de los juicios está dada por la cantidad de testigos, de víctimas e imputados. La tabla reúne los detalles de los juicios orales abiertos en el país según las jurisdicciones, cantidad de imputados, testigos y víctimas. También señala los juicios orales en los que interviene la Secretaría de Derechos Humanos de la Nación como parte querellante.</p>
+            </div>
+
+        <table class="table  table-hover table-responsive ">
             <colgroup>
                 <col>
                 <col>
@@ -18,7 +25,7 @@
                     <th scope="col"><span>Testigos</span> 
                     </th>
                     
-                    <th scope="col"><span>Rol</span> 
+                    <th scope="col"><span title="Secretaría de Derechos Humanos Querellante">SDHN <i class="fa fa-info-circle"></i></span> 
                     </th>
                     <th scope="col"><span>Ficha</span> 
                     </th>

@@ -10,12 +10,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.1/d3.min.js"></script>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
-        <script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/highcharts-more.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
-<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+     
 
     <link rel="stylesheet" href="/styles/poncho.min.css">
     <link rel="stylesheet" href="/styles/icono-arg.css">
@@ -30,62 +25,50 @@
     
 
 </head>
-<body ng-app="genApp">
+<body ng-app="genApp" class="juicios-ficha">
     <div class="root" ng-controller="DetalleController as detalle">
         <?php include_once('./markup/parts/header.php');  ?>
         <div class="case-description">
-            <div class="case-banner">
-                <div class="img-container">
-                </div>
-            </div>
-            <div class="case-body">
-                <div class="container py-4">
-                    <div class="title text-center">
-                        <h1>{{juicio.caus_nombre_vulgar}}</h1>
-                    </div>
-                    <div class="stage text-center">
-                        <p>{{juicio.sede}}</p>
-                    </div>
-                    <div class="subtitle">
-                        <p>{{juicio.caus_causa}} </p>
-                    </div>
-                    <div class="info mt-md-5">
-                        <div class="card-info mt-3">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <div class="icon my-2 mx-3">
-                                    <img src="../../assets/images/people-icon.svg" alt="" class="img-fluid">
-                                </div>
-                                <div class="content">
-                                    <div class="title">
-                                        <h2>{{juicio.cant_victimas}} Víctimas</h2>
-                                    </div>
-                                   <!--  <div class="read-more">
-                                        <a href="">Ver nombres y apellidos de las <span>víctimas</span></a>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-info mt-3">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <div class="icon my-2 mx-3">
-                                    <img src="../../assets/images/justice-icon.svg" alt="" class="img-fluid">
-                                </div>
-                                <div class="content">
-                                    <div class="title">
-                                        <h2>{{juicio.cant_imputados}} Imputados</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            
+                <div ng-show="loading"> <progress class="loader-mail pure-material-progress-linear" />   </div>
+                    <div class="container-md" ng-cloak>
+                        <div class="col-lg-10 offset-lg-1">
+                            <h1 class="display-2 font-weight-bold text-secondary" style="margin-bottom:0">{{juicio.caus_nombre_vulgar}}</h1>
+                            <h2 class="text-white">{{juicio.sede}}</h3>
+                            <p class="lead text-white"><strong>Jueces/as: </strong>{{juicio.caus_juez}}<br>
+                                    
+                            <strong>Fiscal/es: </strong>{{juicio.caus_fiscal}} </p>
+                            
+                            <p class="lead text-white"> <strong>Descripción:</strong><br>
+                                {{juicio.caus_causa}} </p>
+
+                                
+                                
+                                <p class="lead text-white my-0"> <strong>Temas:</strong><br>
+                                    <h2 class="my-0"><span ng-repeat="etiqueta in juicio.etiquetas" class="badge badge-secondary px-1 mr-2">
+                                        {{etiqueta}}</span></h1>
+                                    </p>
+                                
+                                    <h1 class="text-secondary">{{juicio.cant_imputados}} imputados</h3>
+                                        <i class="icono-arg-hombre" ng-repeat="x in [].constructor(juicio.cant_imputados) track by $index">
+                                        </i>
+
+                                    
+                                    
+                                    <h1 class="text-secondary">{{juicio.testigos}} testigos</h3>
+
+                                    <h1 class="text-secondary">{{juicio.cant_victimas}} víctimas</h3>
+
+
+
                     </div>
                 </div>
-            </div>
+     
 
         </div>
            <?php include_once('./markup/parts/footer.php');  ?>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+
     </script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   

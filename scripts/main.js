@@ -14,3 +14,6 @@ var ES = d3.timeFormatDefaultLocale({
     "shortMonths": ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"]
 });
 var formatNumber = ES.format("($.2f")
+
+var isMobile = window.innerWidth<600?1:0
+

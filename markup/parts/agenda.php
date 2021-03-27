@@ -6,36 +6,33 @@
 
             <div ng-show="loading"> <progress class="loader-mail pure-material-progress-linear" />   </div>
             <div class="row" ng-cloak>
-                <div class="col-12">
+                <div class="col-12 text-center">
                 <h3>Agenda de próximas audiencias</h3>
                 </div>
             </div>
               <div class="row" ng-cloak>
-                <div class="col-2">
+                <div class="col-md-3 col-sm-12">
                   <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <a ng-repeat="dia in agenda" class="nav-link" ng-class="{'active': $first}" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-dia{{$index}}" role="tab" aria-controls="v-pills-dia{{$index}}" aria-selected="true">{{dia.key}}</a>
                   </div>
                 </div>
-                <div class="col-10">
+                <div class="col-md-9  col-sm-12 ">
                   <div class="tab-content" id="v-pills-tabContent">
                     <div ng-repeat="dia in agenda" class="tab-pane fade "  ng-class="{'show active': $first}" id="v-pills-dia{{$index}}" role="tabpanel" aria-labelledby="v-pills-dia{{$index}}-tab">
-                        <div class="agenda-content d-flex justify-content-between justify-content-md-center">
-                            <div class="item text-center m-md-5" ng-repeat="a in dia.values">
-                                <div class="type">                   
-                                    {{a.requerimiento}}
-                                    <p>{{a.caus_nombre_vulgar}}</p>
+                                <div class="agenda card float-md-left" ng-repeat="a in dia.values">
+                                    <div class="card-header">
+                                        <i class="icono-arg-reloj"></i>&nbsp;&nbsp;{{a.hora}}hs
+                                      </div>
+                                    <div class="card-body">
+                                        <h6 class="card-subtitle mb-2 text-muted"></h6>
+                                        <p class="card-text"><i class="fa fa-institution"></i> {{a.sede}}</p>
+                                      <h5 class="card-title">{{a.caus_nombre_vulgar}}</h5>
+                                    </div>
+                                    <div class="card-footer">
+                                      <a href="#" class="card-link" ><i class="icono-arg-credenciales"></i> Acreditarse</a>
+                                      <a ng-href="{{a.transmision}}" target="_blank" rel="noopener noreferrer" class="card-link" ng-show="a.transmision">Another link</a>
+                                    </div>
                                 </div>
-                                <div class="stage">
-                                    <p> {{a.sede}}</p>
-                                </div>
-                                <div class="date">
-                                    <p>{{a.proxima_audiencia}} || {{a.hora}}</p>
-                                </div>
-                                <div class="link" ng-show="a.transmision">
-                                    <a ng-href="{{a.transmision}}" target="_blank" rel="noopener noreferrer">Ver</a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     
                  </div>

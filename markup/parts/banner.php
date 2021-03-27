@@ -1,4 +1,4 @@
-<div class="jumbotron jumbotron-fluid">
+<div class="banner jumbotron jumbotron-fluid">
   <div class="container text-center">
     <h1 class="display-1" style = "margin-bottom:0">Alerta Lesa</h1>
     <h3 class="text-muted">Los juicios orales a la dictadura argentina en tiempo real</h3>

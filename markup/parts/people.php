@@ -19,9 +19,7 @@ new Runtime().module(define, name => {
 </script>
               
             </div>
-            <div class="graphic d-block d-md-none mt-2">
-                <img src="/images/mobile-graphic-4.jpg" alt="" class="img-fluid">
-            </div>
+          
         </div>
     </div>
 </div>

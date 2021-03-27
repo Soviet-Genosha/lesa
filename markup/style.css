@@ -24,6 +24,16 @@
   --data-color-G5: #303500;
 }
 
+.text-secondary{
+  color: var(--green-feature-color)!important;
+}
+
+.badge-secondary{
+  background-color: var(--green-feature-color)!important;
+  margin: 5px 0px;
+  color:black;
+}
+
 p {
   color: var(--text-color);
 }
@@ -56,11 +66,17 @@ footer .logo-arg-container img {
   height: 40px;
 }
 
-@media (min-width: 786px) {
- .table-responsive{
-   display: inline-table;
- }
+@media (min-width: 768px) { 
+  .table-responsive{
+    display: inline-table;
+  }
+
 }
+
+
+
+
+
 
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
@@ -73,6 +89,11 @@ footer .logo-arg-container img {
   color: black;
 }
 
+.banner.jumbotron{
+  border-top:4px solid var(--green-feature-color);
+  border-bottom:4px solid var(--green-feature-color);
+  
+}
 
 .agenda .jumbotron{
   padding: 10px;
@@ -83,6 +104,32 @@ footer .logo-arg-container img {
   text-decoration: none;
   text-align: center;
 }
+
+
+
+.agenda .card{
+  height: 250px;
+  width: 200px;
+  min-height: 20vh;
+  min-width: 20vw;
+  max-width: 300px;
+  margin: 5px;
+}
+
+@media (max-width: 768px) { 
+
+  .agenda .card{
+    height: auto;
+    width: 100%;
+    margin: 5px 0px;
+    min-width: 100%;
+  }
+
+  
+
+}
+
+
 
 .card{
   min-height: 300px;
@@ -143,4 +190,32 @@ div.microrrelatos{
 .microrrelatos .card-body {
   padding: 0.5em 1.25em;
 }
+
+.navbar a{
+  text-decoration: none;
+} 
+
+
+svg.bubble{
+  display: block;
+    margin: auto;
+}
+
+[class*="icono-arg"]{
+  vertical-align: middle;
+}
+
+
+body.juicios-ficha{
+  background-color: #525252;
+  color: white;
+  height: auto;
+  
+}
+
+body.juicios-ficha p{
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
 
