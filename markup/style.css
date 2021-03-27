@@ -1,5 +1,5 @@
 :root {
-  --light-bg-color: #f2f2f2;
+  --light-bg-color: #c7cdd4;
   --bg-color: #d7d5d5;
   --dark-bg-color: #8a8686;
   --darker-bg-color: #525252;
@@ -28,228 +28,11 @@ p {
   color: var(--text-color);
 }
 
-.title h3 {
-  font-family: "Encode Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 17px;
+body{
+    font-family: "Encode Sans", sans-serif;
+  
 }
 
-.title .title-border {
-  height: 3px;
-  width: 100%;
-  background-color: var(--purple-feature-color);
-}
-
-.subtitle p {
-  font-family: "Encode Sans", sans-serif;
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 14px;
-  margin: 0;
-}
-
-.navbar .navbar-toggler {
-  border: none;
-  padding: 0;
-}
-
-.navbar .navbar-toggler:focus {
-  border: none;
-  box-shadow: none;
-  outline: none;
-}
-
-ul.nav.nav-pills.nav-stacked {
-  display: block;
-}
-
-ul.nav.nav-pills.nav-stacked li a{
-  padding: 3px 38px;
-    display: block;
-    text-align: center;
-
-}
-
-
-
-.menu-item a {
-  color: var(--title-color);
-  font-family: "Encode Sans", sans-serif;
-  font-size: 19px;
-  font-weight: 500;
-}
-
-.menu-item a:hover {
-  background-color: var(--purple-feature-color);
-}
-
-.banner {
-  border: 3px solid var(--purple-feature-color);
-  border-left: none;
-  border-right: none;
-}
-
-.banner .img-container {
-  background-image: url("assets/images/banner.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 200px;
-}
-
-.banner .title {
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-}
-
-.banner .title h2 {
-  font-family: "Encode Sans", sans-serif;
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 37px;
-  margin: 0;
-}
-
-.banner .title h2:last-child {
-  font-family: "Encode Sans", sans-serif;
-  font-weight: 600;
-}
-
-.gral-metrics .metric .quantity p {
-  color: var(--purple-feature-color);
-  font-family: "Encode Sans", sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 30px;
-}
-
-.gral-metrics .metric .info p {
-  font-family: "Encode Sans", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 15px;
-}
-
-.agenda .agenda-content {
-  background-color: var(--bg-color);
-  padding: 10px;
-}
-
-.agenda .agenda-content .item .type p {
-  font-family: "Encode Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 22px;
-  margin: 0;
-}
-
-.agenda .agenda-content .item .stage p {
-  font-family: "Encode Sans", sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 16px;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-.agenda .agenda-content .item .date p,
-.agenda .agenda-content .item .link a {
-  font-family: "Encode Sans", sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 16px;
-  margin: 0;
-}
-
-.agenda .agenda-content .item .link a {
-  color: var(--text-color);
-}
-
-.durations {
-  background-color: var(--light-bg-color);
-  padding: 10px 0;
-}
-
-.condemned .title h3 {
-  margin-right: 10px;
-  white-space: nowrap;
-}
-
-.juicios-detalle table th {
-  font-family: "Encode Sans", sans-serif;
-  font-size: 10px;
-  font-weight: 600;
-  line-height: 14px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.juicios-detalle table {
-  width: 100%;
-}
-
-.juicios-detalle table col:nth-child(even) {
-  background: var(--light-bg-color);
-}
-
-.juicios-detalle table td:first-child,
-.juicios-detalle table th:first-child {
-  border-right: 1px solid var(--text-color);
-}
-
-.juicios-detalle table td {
-  font-family: "Encode Sans", sans-serif;
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 14px;
-  text-align: center;
-}
-
-.juicios-detalle table td:first-child {
-  color: var(--links-color);
-}
-
-.juicios-detalle .see-more button {
-  background-color: var(--dark-bg-color);
-  border-radius: 10px;
-  color: white;
-  font-family: "Encode Sans", sans-serif;
-  font-size: 12px;
-  line-height: 15px;
-}
-
-.videos .video-container {
-  height: 100%;
-  padding: 2px;
-}
-
-.videos .video {
-  background-color: var(--light-bg-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  height: 100%;
-}
-
-.videos .video.large {
-  min-height: 100px;
-}
-
-.videos .video.medium,
-.videos .video.small {
-  min-height: 50px;
-}
-
-.videos .video.large .player img {
-  height: auto;
-  width: 33px;
-}
-
-.videos .video.medium .player img,
-.videos .video.small .player img {
-  height: auto;
-  width: 24px;
-}
 
 .footer .title h3 {
   font-family: "Encode Sans", sans-serif;
@@ -258,268 +41,6 @@ ul.nav.nav-pills.nav-stacked li a{
   line-height: 15px;
 }
 
-.cases-grid,
-.case-description {
-  background-color: var(--darker-bg-color);
-}
-
-.cases-grid .case {
-  border-radius: 8px;
-}
-
-.cases-grid .title h1,
-.case-description .title h1 {
-  color: var(--purple-feature-color);
-  font-family: "Encode Sans", sans-serif;
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 32px;
-}
-
-.cases-grid .subtitle p {
-  color: white;
-  font-family: "Encode Sans", sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 15px;
-}
-
-.cases-grid .case .img-container {
-  max-height: 250px;
-}
-
-.cases-grid .case .img-container img {
-  max-height: 250px;
-  object-fit: cover;
-  width: 100%;
-}
-
-.cases-grid .case .card-title {
-  font-family: "Encode Sans", sans-serif;
-  font-weight: bold;
-}
-
-.cases-grid .case a {
-  color: var(--text-color);
-  text-decoration: none;
-}
-
-.case-description .case-banner .img-container {
-  background-image: url("./assets/images/caso-banner.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 200px;
-}
-
-.case-description .case-body {
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.case-description .subtitle p {
-  color: white;
-  font-family: "Encode Sans", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 15px;
-  margin-bottom: 10px;
-}
-
-.case-description .stage p {
-  color: white;
-  font-family: "Encode Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 22px;
-  text-transform: uppercase;
-}
-
-.case-description .info .card-info {
-  border-radius: 10px;
-  border: 1px solid white;
-}
-
-.case-description .info .card-info .icon {
-  height: auto;
-  max-width: 80px;
-}
-
-.case-description .info .card-info .title h2 {
-  color: var(--purple-feature-color);
-  font-family: "Encode Sans", sans-serif;
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 32px;
-}
-
-.case-description .info .card-info .read-more a {
-  color: white;
-  font-family: "Encode Sans", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 15px;
-}
-
-.case-description .info .card-info .read-more a span {
-  font-family: "Encode Sans", sans-serif;
-  font-weight: 700;
-}
-
-.slider {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.slider .carousel-item {
-  height: 300px;
-}
-
-.slider .carousel-item img {
-  height: 100%;
-  width: auto;
-}
-
-.slider .carousel-item .slide-content {
-  left: 50px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.slider .carousel-item .slide-content .category p {
-  font-family: "Encode Sans", sans-serif;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: var(--light-bg-color);
-  margin: 0;
-}
-
-.slider .carousel-item .slide-content .title h2 {
-  font-family: "Encode Sans", sans-serif;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: var(--light-bg-color);
-}
-
-.slider .carousel-item .slide-content .description p {
-  font-family: "Encode Sans", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 20px;
-  color: var(--light-bg-color);
-}
-
-.slider .carousel-item .slide-content .see-more button {
-  background-color: var(--purple-feature-color);
-  border-radius: 10px;
-  border: 0.3px solid var(--dark-bg-color);
-  color: var(--light-bg-color);
-  font-family: "Encode Sans", sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 20px;
-  padding: 2px 10px;
-  text-transform: uppercase;
-}
-
-.micro-relatos-grid {
-  background-color: var(--darker-bg-color);
-}
-
-.micro-relatos-grid .search-box,
-.micro-relatos-grid .filter {
-  flex: 1;
-  max-width: 300px;
-}
-
-.micro-relatos-grid .search-box input {
-  box-sizing: border-box;
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.micro-relatos-grid .filter .dropdown button.btn {
-  text-align: left;
-}
-
-.micro-relatos-grid .filter .dropdown button,
-.micro-relatos-grid .filter .dropdown .dropdown-menu {
-  background-color: white;
-  color: var(--dark-bg-color);
-  width: 100%;
-}
-
-.micro-relatos-grid .filter .dropdown button,
-.micro-relatos-grid .search-box input {
-  height: 30px;
-  border: none;
-  border-radius: 10px;
-}
-
-.micro-relatos-grid .filter .dropdown button:focus,
-.micro-relatos-grid .search-box input:focus {
-  box-shadow: none;
-  outline: none;
-  border: none;
-}
-
-.micro-relatos-grid .section-body {
-  width: max-content;
-  margin: 0 auto;
-}
-
-.micro-relatos-grid .grid .relato.card {
-  max-width: 300px;
-  background-color: transparent;
-  border: none;
-}
-
-.micro-relatos-grid .grid .category-title h3 {
-  font-family: "Encode Sans", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: var(--light-bg-color);
-}
-
-.micro-relatos-grid .grid .relato .img-container {
-  position: relative;
-  /* max-height: 150px;
-  width: 100%;
-  overflow: hidden; */
-}
-
-.micro-relatos-grid .grid .relato .img-container .play {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 45px;
-}
-
-.micro-relatos-grid .grid .relato .title h3,
-.micro-relatos-grid .grid .relato .subtitle p {
-  color: var(--light-bg-color);
-}
-
-.micro-relatos-grid .grid .relato .title h3 {
-  font-family: "Encode Sans", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 20px;
-}
-
-.micro-relatos-grid .grid .relato .subtitle p {
-  font-family: "Encode Sans", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 20px;
-}
 
 footer {
   background-color: #37bbed;
@@ -535,167 +56,10 @@ footer .logo-arg-container img {
   height: 40px;
 }
 
-@media (min-width: 992px) {
-  nav {
-    height: 100px;
-  }
-
-  .menu-item a {
-    font-size: 30px;
-    height: 100px;
-    line-height: 80px;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-  .title h3 {
-    font-size: 37px;
-    font-weight: 600;
-    line-height: 46px;
-  }
-
-  .title .title-border {
-    background-color: var(--purple-feature-color);
-    height: 3px;
-    width: 100%;
-  }
-
-  .subtitle p {
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 27px;
-  }
-
-  .banner .img-container {
-    height: 300px;
-  }
-
-  .banner .title h2 {
-    font-size: 50px;
-    line-height: 62px;
-  }
-
-  .gral-metrics {
-    margin: 0 auto;
-    max-width: 70%;
-  }
-
-  .gral-metrics .metric {
-    margin: 0 10px;
-  }
-
-  .gral-metrics .metric .quantity p {
-    font-size: 56px;
-    line-height: 60px;
-  }
-
-  .gral-metrics .metric .info p {
-    font-size: 22px;
-    line-height: 27.5px;
-  }
-
-  .micro-relatos .videos {
-    height: 450px;
-  }
-
-  .micro-relatos .videos .video-container {
-    padding: 10px;
-  }
-
-  .videos .video.large .player img {
-    width: 250px;
-  }
-
-  .videos .video.medium .player img {
-    width: 120px;
-  }
-
-  .videos .video.small .player img {
-    width: 80px;
-  }
-
-  .cases-grid .title h1 {
-    font-size: 50px;
-    line-height: 62px;
-  }
-
-  .cases-grid .subtitle p {
-    font-size: 30px;
-    line-height: 37px;
-  }
-
-  .juicios-detalle table th,
-  .juicios-detalle table td {
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  .case-description .case-banner .img-container {
-    height: 400px;
-  }
-
-  .case-description .title h1 {
-    font-size: 70px;
-    line-height: 87px;
-  }
-
-  .case-description .stage p {
-    font-size: 24px;
-    line-height: 30px;
-  }
-
-  .case-description .subtitle p {
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  .case-description .info .card-info .title h2 {
-    font-size: 48px;
-    line-height: 60px;
-  }
-
-  .case-description .info .card-info .read-more a {
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  .slider .carousel-item {
-    height: 500px;
-  }
-
-  .slider .carousel-item .slide-content {
-    left: 200px;
-  }
-
-  .slider .carousel-item .slide-content .category p {
-    font-size: 20px;
-    line-height: 25px;
-  }
-
-  .slider .carousel-item .slide-content .title h2 {
-    font-size: 40px;
-    line-height: 50px;
-  }
-
-  .slider .carousel-item .slide-content .description p {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  .slider .carousel-item .slide-content .see-more button {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  .micro-relatos-grid .grid .relato .title h3 {
-    font-size: 20px;
-    line-height: 25px;
-  }
-
-  .micro-relatos-grid .grid .relato .subtitle p {
-    font-size: 16px;
-    line-height: 20px;
-  }
+@media (min-width: 786px) {
+ .table-responsive{
+   display: inline-table;
+ }
 }
 
 
@@ -708,3 +72,75 @@ footer .logo-arg-container img {
   padding: 3px 0px 30px;
   color: black;
 }
+
+
+.agenda .jumbotron{
+  padding: 10px;
+  color: black;
+}
+
+.agenda a{
+  text-decoration: none;
+  text-align: center;
+}
+
+.card{
+  min-height: 300px;
+  min-width: 300px;
+  margin-right: 5px;
+}
+
+div.microrrelatos{
+  background-color: var(--light-bg-color);
+  padding: 5px 0px;
+  margin-top: 10px;
+}
+
+.title{
+  padding: 0px 10px;
+}
+
+.title h2{
+  margin:0.5em 0 0.1em 0;
+
+}
+
+.microrrelatos img{
+  vertical-align: middle;
+    border-style: none;
+    object-fit: cover;
+    width: auto;
+    height: 200px;
+}
+.microrrelatos .card-deck{
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.microrrelatos .card-deck .card {
+  -ms-flex: 1 0 0%;
+  flex: 1 0 0%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+
+.microrrelatos .card-deck .card:hover {
+  box-shadow: 0 .325rem .25rem rgba(0,0,0,.175)!important;
+}
+
+
+
+.microrrelatos .card-text {
+  font-size:0.9em;
+}
+.microrrelatos .card-title {
+  margin:2px;
+  font-size:0.9em;
+}
+
+.microrrelatos .card-body {
+  padding: 0.5em 1.25em;
+}
+

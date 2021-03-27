@@ -1,15 +1,15 @@
-<div class="agenda" ng-controller="AgendaController as homeCtrl">
+<section class="agenda" ng-controller="AgendaController as homeCtrl">
     <div class="container">
-        <div class="title text-md-center mt-md-5">
-            <h3>Juicios activos: próximas audiencias</h3>
-        </div>
 
-
-        <div class="agenda-content">
+        <div class="agenda jumbotron">
           
 
             <div ng-show="loading"> <progress class="loader-mail pure-material-progress-linear" />   </div>
-
+            <div class="row" ng-cloak>
+                <div class="col-12">
+                <h3>Agenda de próximas audiencias</h3>
+                </div>
+            </div>
               <div class="row" ng-cloak>
                 <div class="col-2">
                   <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -49,4 +49,4 @@
 
        
     </div>
-</div>
+</section>

@@ -1,6 +1,7 @@
 <html lang="en" class="js-focus-visible" data-js-focus-visible="">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200;400;700&amp;display=swap"
         rel="stylesheet">
@@ -33,14 +34,14 @@
     <div id="root">
         <?php include_once('./markup/parts/header.php');  ?>
         <?php include_once('./markup/parts/banner.php');  ?>
-        <!-- <?php include_once('./markup/parts/micro-relatos.php');  ?>   -->
-        <?php include_once('./markup/parts/metrics.php');  ?>
+        <?php include_once('./markup/parts/micro-relatos.php');  ?> 
         <?php include_once('./markup/parts/agenda.php');  ?>
+        <?php include_once('./markup/parts/metrics.php');  ?>
+        <?php include_once('./markup/parts/categories.php');  ?>
         <?php include_once('./markup/parts/durations.php');  ?> 
         <?php include_once('./markup/parts/people.php');  ?>
-        <?php include_once('./markup/parts/categories.php');  ?>
         <?php include_once('./markup/parts/juicios-detalles.php'); ?> 
-        <!-- <?php include_once('./markup/parts/condemned.php');  ?> -->
+        <?php include_once('./markup/parts/condemned.php');  ?>
         <?php include_once('./markup/parts/footer.php');  ?>
 
                 
@@ -71,6 +72,8 @@
     <script src="scripts/sections/home/agenda.ctrl.js"></script>
     <script src="scripts/sections/home/categories.ctrl.js"></script>
     <script src="scripts/sections/home/juicios.ctrl.js"></script>
+    <script src="scripts/sections/home/microrrelatos.ctrl.js"></script>
+
     <script src="scripts/services/med.fct.js"></script>
     <!-- ======================================================================= -->
     <!-- DIRECTIVES -->

@@ -11,7 +11,8 @@ genApp
           
           $scope.categories = response.data.resultado.causas.map(function(c){
             return {
-              name: c.descripcion,
+              name: c.etiqueta,
+              desc: c.descripcion,
               value:c.cantidad,
             }
           }) ;
@@ -26,16 +27,16 @@ genApp
           Highcharts.chart('categories', {
     chart: {
         type: 'packedbubble',
-        height: '50%'
+        height: '100%'
     },
     tooltip: {
         useHTML: true,
-        pointFormat: '<b>{point.name}:</b> {point.value}'
+        pointFormat: '<b>{point.name}:</b>{point.categoria} {point.value}'
     },
     plotOptions: {
         packedbubble: {
-            minSize: '30%',
-            maxSize: '120%',
+            minSize: '10%',
+            maxSize: '100%',
             zMin: 0,
             zMax: 1000,
             layoutAlgorithm: {

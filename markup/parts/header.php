@@ -12,9 +12,6 @@
       <li class="nav-item active">
         <a class="nav-link" href="/juicios.php" target="_self">Juicios</a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="/micro-relatos/index.php" target="_self">Microrrelatos</a>
-      </li>
     </ul>
   </div>
 </nav>

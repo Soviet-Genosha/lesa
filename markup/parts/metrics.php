@@ -1,4 +1,8 @@
-<div ng-controller="MetricsController as homeCtrl">
+<section ng-controller="MetricsController as homeCtrl">
+<div class="title text-md-center">
+        <h2>Datos</h2>
+        <p class="text-muted">Historias, testimonios y escenas de los juicios</p>
+    </div>
     <div class="gral-metrics mt-3 mt-md-5">
         <div class="container d-flex justify-content-between">
          <div class="row">
@@ -18,4 +22,4 @@
             </div>
         </div>
     </div>
-</div>
+</section>

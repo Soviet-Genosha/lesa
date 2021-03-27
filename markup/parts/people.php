@@ -2,18 +2,13 @@
     <div class="container">
         <div class="victims mt-3">
             <div class="title text-md-center">
-                <h3>Juicios activos: Imputados y Victimas</h3>
+                <h3>Acusados fuera de juicio</h3>
             </div>
             <div class="subtitle mt-md-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex ea commodo consequat. </p>
+                <p>Evolución de desafectados de un juicio oral por razones de salud o fallecimiento.</p>
             </div>
             <div class="graphic mt-2 mt-md-5">
             <div id="observablehq-chart-53e841e4"></div>
-<p>Credit: <a href="https://observablehq.com/@rusosnith/untitled/2"> by andres Snitcofsky</a></p>
 
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";

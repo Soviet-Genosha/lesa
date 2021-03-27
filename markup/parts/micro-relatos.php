@@ -1,55 +1,25 @@
-<div class="micro-relatos mt-md-5">
-    <div class="container">
-        <div class="title text-md-center">
-            <h3>Micro Relatos</h3>
-        </div>
-        <div class="videos d-flex">
-            <div class="col-8">
-                <div class="video-container">
-                    <a href="">
-                        <div class="video large d-flex justify-content-center align-items-center">
-                            <div class="player">
-                                <img src="/images/play.svg" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-4 d-flex flex-wrap">
-                <div class="col-12">
-                    <div class="video-container">
-                        <a href="">
-                            <div class="video medium d-flex justify-content-center align-items-center">
-                                <div class="player">
-                                    <img src="/images/play.svg" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="video-container">
-                        <a href="">
-                            <div class="video small d-flex justify-content-center align-items-center">
-                                <div class="player">
-                                    <img src="/images/play.svg" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="video-container">
-                        <a href="">
-                            <div class="video small d-flex justify-content-center align-items-center">
-                                <div class="player">
-                                    <img src="/images/play.svg" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+<section class="microrrelatos container-fluid" ng-controller="MicrorrelatosController as homeCtrl">
+    <div class="title text-md-center">
+        <h2>Micro Relatos</h2>
+        <p class="text-muted">Historias, testimonios y escenas de los juicios</p>
     </div>
-</div>
+    <div ng-show="loading"> <progress class="loader-mail pure-material-progress-linear" />   </div>
+            <div class="card-deck d-flex flex-row flex-nowrap overflow-auto ng-cloak">
+                
+
+              <div class="card shadow-sm" ng-repeat="relato in microrrelatos">
+                <img src="images/Microrelatos/{{relato.url_imagen}}"  class="">
+                <div class="card-body">
+                  <h6 class="card-title">{{relato.titulo}}</h6>
+                  <p class="card-text">{{relato.descripcion}}</p>
+                  
+                </div>
+                <div class="card-footer">
+                    <a href="{{relato.url_video}}" target="_blank" class="card-link stretched-link ">Ver en youtube</a>
+                </div>
+              </div>
+
+
+         
+            </div>
+</section>

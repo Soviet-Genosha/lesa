@@ -1,6 +1,6 @@
 <div class="juicios-detalle mt-5" ng-controller="JuiciosController as homeCtrl">
     <div class="container">
-        <table class="table">
+        <table class="table table-striped table-hover table-responsive ">
             <colgroup>
                 <col>
                 <col>
@@ -33,7 +33,7 @@
                     <td>{{j.cant_victimas}}</td>
                     <td>{{j.testigos}}</td>
                     <td>{{j.caus_rolsdh?"SI":""}}</td>
-                    <td><a href="#">Ver ficha</a></td>
+                    <td><a href="/causa.php/?id={{j.caus_id}}/">Ver ficha</a></td>
                 </tr>
             </tbody>
         </table>

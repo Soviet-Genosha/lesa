@@ -8,7 +8,7 @@ genApp
         $scope.loading = true;
         $scope.ap = {};
         $scope.metrics = [];
-        $http.get(URL_PREFIX + '/header')
+        $http.get(URL_PREFIX + 'header')
         .then(function(response){
           
           $scope.loading = false;
