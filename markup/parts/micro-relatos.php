@@ -7,7 +7,7 @@
             <div class="card-deck d-flex flex-row flex-nowrap overflow-auto ng-cloak">
                 
 
-              <div class="card shadow-sm" ng-repeat="relato in microrrelatos">
+              <div class="card shadow-sm" ng-repeat="relato in microrrelatos" ng-cloak>
                 <img src="images/Microrelatos/{{relato.url_imagen}}"  class="">
                 <div class="card-body">
                   <h6 class="card-title">{{relato.titulo}}</h6>
