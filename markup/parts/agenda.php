@@ -24,9 +24,8 @@
                                         <i class="icono-arg-reloj"></i>&nbsp;&nbsp;{{a.hora}}hs
                                       </div>
                                     <div class="card-body">
-                                        <h6 class="card-subtitle mb-2 text-muted"></h6>
-                                        <p class="card-text"><i class="fa fa-institution"></i> {{a.sede}}</p>
-                                      <h5 class="card-title">{{a.caus_nombre_vulgar}}</h5>
+                                        <p class="card-text m-0"><i class="fa fa-institution"></i> {{a.sede}}</p>
+                                      <h5 class="card-title my-2">{{a.caus_nombre_vulgar}}</h5>
                                     </div>
                                     <div class="card-footer">
                                       <a href="#" class="card-link" ><i class="icono-arg-credenciales"></i> Acreditarse</a>

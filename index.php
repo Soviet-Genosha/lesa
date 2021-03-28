@@ -32,6 +32,7 @@
 
 <body ng-app="genApp">
     <div id="root">
+        <?php $currentPage = "inicio"; ?>
         <?php include_once('./markup/parts/header.php');  ?>
         <?php include_once('./markup/parts/banner.php');  ?>
         <?php include_once('./markup/parts/micro-relatos.php');  ?> 

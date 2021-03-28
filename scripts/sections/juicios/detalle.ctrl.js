@@ -14,8 +14,9 @@ genApp
           $scope.juicio = response.data.resultado.juicio[0] ;
           
           $scope.juicio.etiquetas =  $scope.juicio.etiquetas.split(";")
-          console.log( $scope.juicio.etiquetas);
+          $scope.juicio.testigosDetalle = $scope.juicio.categoria_cantidad_testigo?$scope.juicio.categoria_cantidad_testigo.split(";").map(d=>d.trim().split(":")):null;
           $scope.loading = false;
+
           console.log('ok');
         },function(e){
           console.log('ko')

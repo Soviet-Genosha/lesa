@@ -108,11 +108,10 @@ footer .logo-arg-container img {
 
 
 .agenda .card{
-  height: 250px;
-  width: 200px;
-  min-height: 20vh;
-  min-width: 20vw;
-  max-width: 300px;
+  width: 250px;
+  min-height: 25vh;
+  min-width: initial;
+  max-width: 280px;
   margin: 5px;
 }
 
@@ -219,3 +218,7 @@ body.juicios-ficha p{
 }
 
 
+li.nav-item, .navbar .navbar-brand {
+  font-size: 2em;
+  padding: 0 13px;
+}

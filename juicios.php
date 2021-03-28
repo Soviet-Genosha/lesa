@@ -27,6 +27,8 @@
 </head>
 <body ng-app="genApp">
     <div class="root">
+    <?php $currentPage = "juicios"; ?>
+
         <?php include_once('./markup/parts/header.php');  ?>
         <div class="cases-grid py-4">
             <div class="container">

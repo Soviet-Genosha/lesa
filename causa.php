@@ -1,6 +1,8 @@
 <html lang="en" class="js-focus-visible" data-js-focus-visible="">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200;400;700&amp;display=swap"
         rel="stylesheet">
@@ -14,7 +16,6 @@
 
     <link rel="stylesheet" href="/styles/poncho.min.css">
     <link rel="stylesheet" href="/styles/icono-arg.css">
-    <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/markup/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     
@@ -27,39 +28,65 @@
 </head>
 <body ng-app="genApp" class="juicios-ficha">
     <div class="root" ng-controller="DetalleController as detalle">
+        <?php $currentPage = "juicios"; ?>
+
         <?php include_once('./markup/parts/header.php');  ?>
         <div class="case-description">
             
                 <div ng-show="loading"> <progress class="loader-mail pure-material-progress-linear" />   </div>
                     <div class="container-md" ng-cloak>
                         <div class="col-lg-10 offset-lg-1">
+                            <section>
                             <h1 class="display-2 font-weight-bold text-secondary" style="margin-bottom:0">{{juicio.caus_nombre_vulgar}}</h1>
-                            <h2 class="text-white">{{juicio.sede}}</h3>
+                            <h2 class="text-white"><i class="icono-arg-martillo"></i>
+                                 {{juicio.sede}}</h3>
                             <p class="lead text-white"><strong>Jueces/as: </strong>{{juicio.caus_juez}}<br>
                                     
                             <strong>Fiscal/es: </strong>{{juicio.caus_fiscal}} </p>
                             
                             <p class="lead text-white"> <strong>Descripción:</strong><br>
                                 {{juicio.caus_causa}} </p>
-
-                                
+                            </section>
+                                <section>
                                 
                                 <p class="lead text-white my-0"> <strong>Temas:</strong><br>
                                     <h2 class="my-0"><span ng-repeat="etiqueta in juicio.etiquetas" class="badge badge-secondary px-1 mr-2">
                                         {{etiqueta}}</span></h1>
                                     </p>
-                                
-                                    <h1 class="text-secondary">{{juicio.cant_imputados}} imputados</h3>
-                                        <i class="icono-arg-hombre" ng-repeat="x in [].constructor(juicio.cant_imputados) track by $index">
-                                        </i>
 
+                                </section>
+
+                                    <section class="border border-white" style="
+                                    padding: 0px 20px;
+                                    border-radius: 3px;
+                                    margin: 0 -20px;
+                                "  ng-if="juicio.cant_imputados">    
+                                            <h1 class="text-secondary mb-0">{{juicio.cant_imputados}} imputados<br>
+                                            
+                                            <i class="icono-arg-hombre" ng-repeat="x in [].constructor(juicio.cant_imputados) track by $index">
+                                                </i></h1>
+                                        
+                                            <p class="lead text-white"> {{juicio.imputados}} </p>
+                                            <p class="lead text-white"> <strong>Imputados excluidos:</strong>
+                                                {{juicio.excluidos}} 
+
+                                            </p>
+                                    </section>
+                                    <section  ng-if="juicio.cant_victimas  != null">
+                                            <h1 class="text-secondary mb-0">{{juicio.cant_victimas}} víctimas<br>
+                                            <i class="icono-arg-hombre" ng-repeat="x in [].constructor(juicio.cant_victimas) track by $index">
+                                                </i></h1>
+                                    </section>
+
+                            <section ng-if="juicio.testigos != null">
+                                     <h1 class="text-secondary mb-0">{{juicio.testigos}} testigos</h1>
+                                     <ul class="list-unstyled">
+                                        <li ng-repeat="tipo in juicio.testigosDetalle"><strong>{{tipo[0]}}:</strong>{{tipo[1]}}</li>
+                                    </ul>
+                                </section>
+                                        
                                     
-                                    
-                                    <h1 class="text-secondary">{{juicio.testigos}} testigos</h3>
-
-                                    <h1 class="text-secondary">{{juicio.cant_victimas}} víctimas</h3>
-
-
+                                    <a href="/index.php" class="btn btn-primary">Inicio</a> <a href="/juicios.php" class="btn btn-primary">Ver todos los juicios</a>
 
                     </div>
                 </div>

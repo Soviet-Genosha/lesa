@@ -33,7 +33,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="j in juicios">
+                <tr ng-repeat="j in juicios" ng-cloak>
                     <td>{{j.jurisdiccion}}</td>
                     <td>{{j.caus_nombre_vulgar}}</td>
                     <td>{{j.cant_imputados}}</td>
