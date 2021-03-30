@@ -1,6 +1,6 @@
 <section class="microrrelatos container-fluid" ng-controller="MicrorrelatosController as homeCtrl">
     <div class="title text-md-center">
-        <h2>Micro Relatos</h2>
+        <h2>Microrrelatos</h2>
         <p class="text-muted">Historias, testimonios y escenas de los juicios</p>
     </div>
     <div ng-show="loading"> <progress class="loader-mail pure-material-progress-linear" />   </div>
@@ -11,7 +11,7 @@
                 <img src="images/Microrelatos/{{relato.url_imagen}}"  class="">
                 <div class="card-body">
                   <h6 class="card-title">{{relato.titulo}}</h6>
-                  <p class="card-text">{{relato.descripcion}}</p>
+                  <p class="card-text">{{relato.bajada}}</p>
                   
                 </div>
                 <div class="card-footer">
