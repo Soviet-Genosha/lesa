@@ -35,7 +35,7 @@
         <?php $currentPage = "inicio"; ?>
         <?php include_once('./markup/parts/header.php');  ?>
         <?php include_once('./markup/parts/banner.php');  ?>
-        <?php include_once('./markup/parts/micro-relatos.php');  ?> 
+        <?php include_once('./markup/parts/micro-relatos-carousel.php');  ?> 
         <?php include_once('./markup/parts/agenda.php');  ?>
         <?php include_once('./markup/parts/metrics.php');  ?>
         <?php include_once('./markup/parts/categories.php');  ?>

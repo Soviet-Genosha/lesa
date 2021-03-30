@@ -131,7 +131,6 @@ footer .logo-arg-container img {
 
 
 .card{
-  min-height: 300px;
   min-width: 300px;
   margin-right: 5px;
 }
@@ -172,11 +171,6 @@ div.microrrelatos{
 }
 
 
-.microrrelatos .card-deck .card:hover {
-  box-shadow: 0 .325rem .25rem rgba(0,0,0,.175)!important;
-}
-
-
 
 .microrrelatos .card-text {
   font-size:0.9em;
@@ -201,7 +195,8 @@ svg.bubble{
 }
 
 [class*="icono-arg"]{
-  vertical-align: middle;
+  vertical-align: top;
+  margin-top: -1px;
 }
 
 
@@ -222,4 +217,12 @@ li.nav-item, .navbar .navbar-brand {
   font-size: 2em;
   padding: 0 13px;
 }
+
+
+img.card-img-top{
+  height: 220px;
+object-fit: cover;
+
+}
+
 

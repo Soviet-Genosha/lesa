@@ -16,16 +16,16 @@
             </colgroup>
             <thead>
                 <tr>
-                    <th scope="col"><span>Jurisdicción</span> </th>
-                    <th scope="col">Juicio</th>
-                    <th scope="col"><span>Imputados</span>
+                    <th scope="col" ng-click="sortBy('j.caus_lugar')"><a href=""><span>Localidad</span></a></th>
+                    <th scope="col" ng-click="sortBy('j.caus_nombre_vulgar')"><a href=""><span>Juicio</span></a></th>
+                    <th scope="col" ng-click="sortBy('j.cant_imputados')"><a href=""><span>Imputados</span></a>
                     </th>
-                    <th scope="col"><span>Victimas</span> 
+                    <th scope="col" ng-click="sortBy('j.cant_victimas')"><a href=""><span>Victimas</span></a> 
                     </th>
-                    <th scope="col"><span>Testigos</span> 
+                    <th scope="col" ng-click="sortBy('j.testigos')"><a href=""><span>Testigos</span></a> 
                     </th>
                     
-                    <th scope="col"><span title="Secretaría de Derechos Humanos Querellante">SDHN <i class="fa fa-info-circle"></i></span> 
+                    <th scope="col" ng-click="sortBy('j.caus_rolsdh')"><a href=""><span title="Secretaría de Derechos Humanos Querellante">SDHN <i class="fa fa-info-circle"></i></span></a> 
                     </th>
                     <th scope="col"><span>Ficha</span> 
                     </th>
@@ -34,7 +34,7 @@
             </thead>
             <tbody>
                 <tr ng-repeat="j in juicios" ng-cloak>
-                    <td>{{j.jurisdiccion}}</td>
+                    <td>{{j.caus_lugar}}</td>
                     <td>{{j.caus_nombre_vulgar}}</td>
                     <td>{{j.cant_imputados}}</td>
                     <td>{{j.cant_victimas}}</td>

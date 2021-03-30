@@ -40,16 +40,16 @@
                             <h1 class="display-2 font-weight-bold text-secondary" style="margin-bottom:0">{{juicio.caus_nombre_vulgar}}</h1>
                             <h2 class="text-white"><i class="icono-arg-martillo"></i>
                                  {{juicio.sede}}</h3>
-                            <p class="lead text-white"><strong>Jueces/as: </strong>{{juicio.caus_juez}}<br>
+                            <p class="lead text-white"><strong>Tribunal: </strong>{{juicio.caus_juez}}<br>
                                     
                             <strong>Fiscal/es: </strong>{{juicio.caus_fiscal}} </p>
                             
-                            <p class="lead text-white"> <strong>Descripción:</strong><br>
+                            <p class="lead text-white"> <strong>Descripción</strong><br>
                                 {{juicio.caus_causa}} </p>
                             </section>
                                 <section>
                                 
-                                <p class="lead text-white my-0"> <strong>Temas:</strong><br>
+                                <p class="lead text-white my-0"> <strong>Temas</strong><br>
                                     <h2 class="my-0"><span ng-repeat="etiqueta in juicio.etiquetas" class="badge badge-secondary px-1 mr-2">
                                         {{etiqueta}}</span></h1>
                                     </p>

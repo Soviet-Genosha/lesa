@@ -26,30 +26,30 @@
 
 </head>
 <body ng-app="genApp">
-    <div class="root">
-    <?php $currentPage = "juicios"; ?>
+    <div class="root microrrelatos">
+    <?php $currentPage = "microrrelatos"; ?>
 
         <?php include_once('./markup/parts/header.php');  ?>
         <div class="cases-grid py-4">
             <div class="container">
-                <div class="title">
-                    <h1>Juicios en debate</h1>
+                <div class="text-center">
+                    <h1>Microrrelatos</h1>
+                   <h3>Historias, testimonios y escenas de los juicios</h3>
                 </div>
-                <div class="subtitle">
-                    <p>Descripción de los debates orales actuales por crímenes de lesa humanidad en todo el país.</p>
-                </div>
-                <section ng-controller="HomeController as homeController">
+                <section ng-controller="MicrorrelatosController as MicrorrelatosController">
 
                 <div class="row row-cols-1 row-cols-md-3">
-                        <div class="col mb-4" ng-repeat="j in juicios">
-                            <div class="card">
-                            <img src="/images/Juicio/{{j.caus_icono}}" class="card-img-top" alt="...">
+                        <div class="col mb-4" ng-repeat="relato in microrrelatos">
+                            <div class="card h-100 shadow-sm">
+                            <img src="images/Microrelatos/{{relato.url_imagen}}" class="card-img-top " alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">{{j.caus_nombre_vulgar}}</h5>
-                                <p class="card-text">{{j.caus_caratula}}</p>
+                                <h5 class="card-title my-2">{{relato.titulo}}</h5>
+                                <p class="lead my-2">{{relato.bajada}}</h5>
+                                <p class="card-text">{{relato.descripcion}}</p>
                             </div>
-                            <div class="card-footer">
-                                <a href="./causa.php/?id={{j.caus_id}}" target="_self" class="card-link stretched-link ">Ver detalle</a>
+                            <div class="card-footer text-center">
+                                <a href="./causa.php/?id={{relato.url_video}}" target="_self" class="card-link btn btn-primary "><i class="icono-arg-youtube"></i>
+ Reproducir</a>
                             </div>
                             </div>
                         </div>
@@ -83,7 +83,7 @@
     <script src="scripts/app.js"></script>
 
     <script src="scripts/sections/juicios/home.ctrl.js"></script>
-    <script src="scripts/sections/juicios/detalle.ctrl.js"></script>
+    <script src="scripts/sections/home/microrrelatos.ctrl.js"></script>
     <script src="scripts/services/med.fct.js"></script>
     <!-- ======================================================================= -->
     <!-- DIRECTIVES -->
