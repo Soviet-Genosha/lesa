@@ -13,6 +13,7 @@ genApp
           
           $scope.loading = false;
           $scope.metrics = response.data.resultado.header;
+          $scope.actualizacion = d3.timeFormat("%B %d, %Y")(new Date(response.data.metadata.fecha_actualizacion));
 
         },function(e){
           $scope.loading = false;

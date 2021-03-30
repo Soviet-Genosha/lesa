@@ -2,7 +2,7 @@
     <div class="container">
         <div class="victims mt-3">
             <div class="title text-md-center">
-                <h3>Acusados fuera de juicio</h3>
+                <h3>Acusados</h3>
             </div>
             <div class="subtitle mt-md-4">
                 <p>Evolución de desafectados de un juicio oral por razones de salud o fallecimiento.</p>

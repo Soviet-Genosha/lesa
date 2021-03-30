@@ -2,6 +2,7 @@
     <div class="gral-metrics mt-1">
         <div class="container metrics" >
             <h2 class="text-md-center m-0">Datos</h2>
+            <p class="text-muted text-center mt-1" ng-cloak>Última actualización: {{actualizacion}}</p>
             <div ng-show="loading">
                 <progress class="loader-mail pure-material-progress-linear" />
             </div>
