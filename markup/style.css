@@ -137,6 +137,8 @@ footer .logo-arg-container img {
 @media (max-width: 768px) { 
 
   .agenda .card{
+    min-height: auto;
+
     height: auto;
     width: 100%;
     margin: 5px 0px;
@@ -240,3 +242,25 @@ object-fit: cover;
 }
 
 
+.titulo {
+  position: relative;
+  font-size: 30px;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+}
+
+.titulo:before, .titulo:after {
+  position: absolute;
+  top: 55%;
+  overflow: hidden;
+  width: 48%;
+  height: 4px;
+  content: '\a0';
+  margin-left: 2%;
+  background-color: #cddc39;
+}
+.titulo:before {
+  margin-left: -50%;
+  text-align: right;
+}

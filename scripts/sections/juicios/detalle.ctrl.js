@@ -8,10 +8,10 @@ genApp
 
         var id =  window.location.search.split('=')[1]
         $scope.loading = true;
-        $http.get(URL_PREFIX + 'causas/juicios/'+ id)
+        $http.get(URL_PREFIX + 'causas-ccds/'+ id)
         .then(function(response){
 
-          $scope.juicio = response.data.resultado.juicio[0] ;
+          $scope.juicio = response.data.resultado[0] ;
           
           $scope.juicio.etiquetas =  $scope.juicio.etiquetas.split(";")
           $scope.juicio.testigosDetalle = $scope.juicio.categoria_cantidad_testigo?$scope.juicio.categoria_cantidad_testigo.split(";").map(d=>d.trim().split(":")):null;

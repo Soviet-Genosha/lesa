@@ -11,11 +11,14 @@
                 </div>
             </div>
               <div class="row" ng-cloak>
+                
+
                 <div class="col-md-3 col-sm-12">
                   <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <a ng-repeat="dia in agenda" class="nav-link" ng-class="{'active': $first}" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-dia{{$index}}" role="tab" aria-controls="v-pills-dia{{$index}}" aria-selected="true">{{dia.key}}</a>
                   </div>
                 </div>
+
                 <div class="col-md-9  col-sm-12 ">
                   <div class="tab-content" id="v-pills-tabContent">
                     <div ng-repeat="dia in agenda" class="tab-pane fade "  ng-class="{'show active': $first}" id="v-pills-dia{{$index}}" role="tabpanel" aria-labelledby="v-pills-dia{{$index}}-tab">

@@ -6,7 +6,7 @@
             <div class="col-md-6 col-sm-6">
                 <div class="region region-footer1">
                     <section id="block-menu-menu-footer-1" class="block block-menu clearfix">
-                        <img src="/images/logo SDHNi.png" >
+                        <img src="/images/logo SDHNi.png" class="w-100">
                     </section>
                 </div>
             </div>

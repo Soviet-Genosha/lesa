@@ -17,7 +17,7 @@
             </colgroup>
             <thead>
                 <tr>
-                    <th scope="col" ng-click="sortBy('caus_lugar')"><a href=""><span>Localidad</span></a></th>
+                    <th scope="col" ng-click="sortBy('jurisdiccion')"><a href=""><span>Jurisdicción</span></a></th>
                     <th scope="col" ng-click="sortBy('caus_nombre_vulgar')"><a href=""><span>Juicio</span></a></th>
                     <th scope="col" ng-click="sortBy('cant_imputados')" class="text-center"><a href=""><span>Imputados</span></a>
                     </th>
@@ -35,13 +35,13 @@
             </thead>
             <tbody>
                 <tr ng-repeat="j in juicios | orderBy:sortElement" ng-cloak>
-                    <td>{{j.caus_lugar}}</td>
+                    <td>{{j.jurisdiccion}}</td>
                     <td>{{j.caus_nombre_vulgar}}</td>
                     <td class="text-center pb-1">{{j.cant_imputados}}</td>
                     <td class="text-center pb-1">{{j.cant_victimas}}</td>
 
                     <td class="text-center pb-1">{{j.testigos}}</td>
-                    <td class="text-center pt-2 pb-1"><i class="icono-arg-escudo-nacional" ng-show="j.caus_rolsdh"></i></td>
+                    <td class="text-center pt-2 pb-1"><i class="icono-arg-validez-legal" ng-show="j.caus_rolsdh"></i></td>
                     <td class="pt-2 pb-1"><a href="/causa.php/?id={{j.caus_id}}/" class="btn  btn-sm btn-secondary m-0"><i class="icono-arg-revista"></i>
  Ficha</a></td>
                 </tr>
