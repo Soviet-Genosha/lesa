@@ -17,16 +17,16 @@
             </colgroup>
             <thead>
                 <tr>
-                    <th scope="col" ng-click="sortBy('j.caus_lugar')"><a href=""><span>Localidad</span></a></th>
-                    <th scope="col" ng-click="sortBy('j.caus_nombre_vulgar')"><a href=""><span>Juicio</span></a></th>
-                    <th scope="col" ng-click="sortBy('j.cant_imputados')" class="text-center"><a href=""><span>Imputados</span></a>
+                    <th scope="col" ng-click="sortBy('caus_lugar')"><a href=""><span>Localidad</span></a></th>
+                    <th scope="col" ng-click="sortBy('caus_nombre_vulgar')"><a href=""><span>Juicio</span></a></th>
+                    <th scope="col" ng-click="sortBy('cant_imputados')" class="text-center"><a href=""><span>Imputados</span></a>
                     </th>
-                    <th scope="col" ng-click="sortBy('j.cant_victimas')" class="text-center"><a href=""><span>Victimas</span></a> 
+                    <th scope="col" ng-click="sortBy('cant_victimas')" class="text-center"><a href=""><span>Victimas</span></a> 
                     </th>
-                    <th scope="col" ng-click="sortBy('j.testigos')" class="text-center"><a href=""><span>Testigos</span></a> 
+                    <th scope="col" ng-click="sortBy('testigos')" class="text-center"><a href=""><span>Testigos</span></a> 
                     </th>
                     
-                    <th scope="col" ng-click="sortBy('j.caus_rolsdh')" class="text-center"><a href=""><span title="Secretaría de Derechos Humanos Querellante">SDHN <i class="fa fa-info-circle"></i></span></a> 
+                    <th scope="col" ng-click="sortBy('caus_rolsdh')" class="text-center"><a href=""><span title="Secretaría de Derechos Humanos Querellante">SDHN <i class="fa fa-info-circle"></i></span></a> 
                     </th>
                     <th scope="col">
                     </th>
@@ -34,7 +34,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="j in juicios" ng-cloak>
+                <tr ng-repeat="j in juicios | orderBy:sortElement" ng-cloak>
                     <td>{{j.caus_lugar}}</td>
                     <td>{{j.caus_nombre_vulgar}}</td>
                     <td class="text-center pb-1">{{j.cant_imputados}}</td>
