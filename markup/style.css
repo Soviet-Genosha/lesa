@@ -90,11 +90,14 @@ footer .logo-arg-container img {
 }
 
 .banner.jumbotron{
-  border-top:4px solid var(--green-feature-color);
   border-bottom:4px solid var(--green-feature-color);
   
 }
 
+#menu{
+  border-bottom:4px solid var(--green-feature-color);
+
+}
 .agenda .jumbotron{
   padding: 10px;
   color: black;

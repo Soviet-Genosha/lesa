@@ -26,10 +26,10 @@
                                     <div class="card-body">
                                         <p class="card-text m-0"><i class="fa fa-institution"></i> {{a.sede}}</p>
                                       <h5 class="card-title my-2">{{a.caus_nombre_vulgar}}</h5>
+                                      <a href="{{a.accesibilidad}}" class="card-link" ><i class="icono-arg-credenciales"></i> Acreditación</a>
                                     </div>
-                                    <div class="card-footer">
-                                      <a href="#" class="card-link" ><i class="icono-arg-credenciales"></i> Acreditarse</a>
-                                      <a ng-href="{{a.transmision}}" target="_blank" rel="noopener noreferrer" class="card-link" ng-show="a.transmision">Another link</a>
+                                    <div class="card-footer " ng-show="a.transmision">
+                                      <a ng-href="{{a.transmision}}" target="_blank" rel="noopener noreferrer" class="card-link" ><i class="icono-arg-youtube"></i> Ver en vivo</a>
                                     </div>
                                 </div>
                     </div>
