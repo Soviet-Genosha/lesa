@@ -9,7 +9,7 @@
                 
 
               <div class="card m-1" ng-repeat="relato in microrrelatos.slice(microrrelatos.length-3,microrrelatos.length)" ng-cloak>
-                <img src="images/Microrelatos/{{relato.url_imagen}}"  class="">
+                <img src="images/Microrelatos/{{relato.url_imagen}}" >
                 <div class="card-body">
                   <h6 class="card-title">{{relato.titulo}}</h6>
                   <p class="card-text">{{relato.bajada}}</p>

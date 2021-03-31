@@ -30,14 +30,16 @@
     <div class="root" ng-controller="DetalleController as detalle">
         <?php $currentPage = "juicios"; ?>
 
-        <?php include_once('./markup/parts/header.php');  ?>
+        <?php include_once('./markup/header.php');  ?>
         <div class="case-description">
-            
+        <div class="container-fluid header-juicios" style="background-image:url(/images/Juicio/{{juicio.caus_icono}})">
+                            </div>
                 <div ng-show="loading"> <progress class="loader-mail pure-material-progress-linear" />   </div>
                     <div class="container-md" ng-cloak>
                         <div class="col-lg-10 offset-lg-1">
-                            <section>
-                            <h1 class="display-2 font-weight-bold text-secondary" style="margin-bottom:0">{{juicio.caus_nombre_vulgar}}</h1>
+                          
+                            <section class="mt-0">
+                            <h1 class="display-2 mt-0 font-weight-bold text-secondary" style="margin-bottom:0">{{juicio.caus_nombre_vulgar}}</h1>
                             <h2 class="text-white"><i class="icono-arg-martillo"></i>
                                  {{juicio.sede}}</h3>
                             <p class="lead text-white"><strong>Tribunal: </strong>{{juicio.caus_juez}}<br>
@@ -94,7 +96,7 @@
      
 
         </div>
-           <?php include_once('./markup/parts/footer.php');  ?>
+           <?php include_once('./markup/footer.php');  ?>
     </div>
 
     </script>

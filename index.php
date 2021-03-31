@@ -29,17 +29,17 @@
 <body ng-app="genApp">
     <div id="root">
         <?php $currentPage = "inicio"; ?>
-        <?php include_once('./markup/parts/header.php');  ?>
-        <?php include_once('./markup/parts/banner.php');  ?>
-        <?php include_once('./markup/parts/micro-relatos-carousel.php');  ?> 
-        <?php include_once('./markup/parts/agenda.php');  ?>
-        <?php include_once('./markup/parts/metrics.php');  ?>
-        <?php include_once('./markup/parts/categories.php');  ?>
-        <?php include_once('./markup/parts/durations.php');  ?> 
-        <?php include_once('./markup/parts/people.php');  ?>
-        <?php include_once('./markup/parts/juicios-detalles.php'); ?> 
-        <?php include_once('./markup/parts/condemned.php');  ?>
-        <?php include_once('./markup/parts/footer.php');  ?>
+        <?php include_once('./markup/header.php');  ?>
+        <?php include_once('./markup/banner.php');  ?>
+        <?php include_once('./markup/micro-relatos-carousel.php');  ?> 
+        <?php include_once('./markup/agenda.php');  ?>
+        <?php include_once('./markup/metrics.php');  ?>
+        <?php include_once('./markup/categories.php');  ?>
+        <?php include_once('./markup/durations.php');  ?> 
+        <?php include_once('./markup/people.php');  ?>
+        <?php include_once('./markup/juicios-detalles.php'); ?> 
+        <?php include_once('./markup/condemned.php');  ?>
+        <?php include_once('./markup/footer.php');  ?>
 
                 
     </div>

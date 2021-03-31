@@ -264,3 +264,11 @@ object-fit: cover;
   margin-left: -50%;
   text-align: right;
 }
+
+
+.header-juicios{
+  height: 35vh;
+    background-size: cover;
+    border-bottom:1px solid var(--green-feature-color);
+    background-position: center;
+  }

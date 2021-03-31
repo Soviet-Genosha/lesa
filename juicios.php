@@ -29,7 +29,7 @@
     <div class="root">
     <?php $currentPage = "juicios"; ?>
 
-        <?php include_once('./markup/parts/header.php');  ?>
+        <?php include_once('./markup/header.php');  ?>
         <div class="cases-grid py-4">
             <div class="container">
                 <div class="title">
@@ -60,7 +60,7 @@
                   
             </section>
         </div>
-        <?php include_once('./markup/parts/footer.php');  ?>
+        <?php include_once('./markup/footer.php');  ?>
     </div>
 
     </script>
