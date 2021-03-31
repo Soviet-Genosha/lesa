@@ -28,9 +28,11 @@
         <div class="row" >
             
           <div class="col text-center" ng-repeat="m in datos" ng-cloak>
-                <div class="h3 text-secondary m-0">{{m.duracion}}</div>
+                <div class="h3 text-secondary m-0">{{m.titulo}}</div>
                 <div class="h6 font-weight-bold m-0">{{m.descripcion}}</div>
-                <div class="h6 font-weight-normal m-0">({{m.referencia}})</div>
+                <div class="h6 font-weight-normal m-0" ng-show="m.subtitulo">({{m.subtitulo}})</div>
+                <div class="h6 font-weight-normal m-0" ng-show="!m.subtitulo">({{m.referencia}})</div>
+
           </div>
           
       </div>
