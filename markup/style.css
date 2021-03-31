@@ -92,6 +92,22 @@ footer .logo-arg-container img {
 .banner.jumbotron{
   border-bottom:4px solid var(--green-feature-color);
   
+  background-image: url("/images/header_home.jpeg");
+  color: white;
+
+}
+
+
+.banner h1{
+  margin-bottom: 0;
+    font-weight: 600;
+    text-shadow: -1px 6px 11px #000000;
+}
+
+.banner h3, .banner p{
+  color: white!important;
+  opacity: 1!important;
+
 }
 
 #menu{
@@ -112,7 +128,7 @@ footer .logo-arg-container img {
 
 .agenda .card{
   width: 250px;
-  min-height: 25vh;
+  min-height: 250px;
   min-width: initial;
   max-width: 280px;
   margin: 5px;
@@ -127,11 +143,7 @@ footer .logo-arg-container img {
     min-width: 100%;
   }
 
-  
-
 }
-
-
 
 .card{
   min-width: 300px;
@@ -140,8 +152,7 @@ footer .logo-arg-container img {
 
 div.microrrelatos{
   background-color: var(--light-bg-color);
-  padding: 5px 0px;
-  margin-top: 10px;
+
 }
 
 .title{
@@ -153,7 +164,7 @@ div.microrrelatos{
 
 }
 
-.microrrelatos img{
+section.microrrelatos img{
   vertical-align: middle;
     border-style: none;
     object-fit: cover;

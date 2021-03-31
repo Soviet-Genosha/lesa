@@ -1,5 +1,6 @@
+<section class="my-5">
 <div class="juicios-detalle mt-5" ng-controller="JuiciosController as homeCtrl">
-    <div class="container">
+    <div class="container py-3 border shadow-sm rounded-sm ">
              <div class="title text-md-center">
                 <h3>Los juicios en detalle</h3>
             </div>
@@ -18,16 +19,16 @@
                 <tr>
                     <th scope="col" ng-click="sortBy('j.caus_lugar')"><a href=""><span>Localidad</span></a></th>
                     <th scope="col" ng-click="sortBy('j.caus_nombre_vulgar')"><a href=""><span>Juicio</span></a></th>
-                    <th scope="col" ng-click="sortBy('j.cant_imputados')"><a href=""><span>Imputados</span></a>
+                    <th scope="col" ng-click="sortBy('j.cant_imputados')" class="text-center"><a href=""><span>Imputados</span></a>
                     </th>
-                    <th scope="col" ng-click="sortBy('j.cant_victimas')"><a href=""><span>Victimas</span></a> 
+                    <th scope="col" ng-click="sortBy('j.cant_victimas')" class="text-center"><a href=""><span>Victimas</span></a> 
                     </th>
-                    <th scope="col" ng-click="sortBy('j.testigos')"><a href=""><span>Testigos</span></a> 
+                    <th scope="col" ng-click="sortBy('j.testigos')" class="text-center"><a href=""><span>Testigos</span></a> 
                     </th>
                     
-                    <th scope="col" ng-click="sortBy('j.caus_rolsdh')"><a href=""><span title="Secretaría de Derechos Humanos Querellante">SDHN <i class="fa fa-info-circle"></i></span></a> 
+                    <th scope="col" ng-click="sortBy('j.caus_rolsdh')" class="text-center"><a href=""><span title="Secretaría de Derechos Humanos Querellante">SDHN <i class="fa fa-info-circle"></i></span></a> 
                     </th>
-                    <th scope="col"><span>Ficha</span> 
+                    <th scope="col">
                     </th>
                     
                 </tr>
@@ -36,11 +37,13 @@
                 <tr ng-repeat="j in juicios" ng-cloak>
                     <td>{{j.caus_lugar}}</td>
                     <td>{{j.caus_nombre_vulgar}}</td>
-                    <td>{{j.cant_imputados}}</td>
-                    <td>{{j.cant_victimas}}</td>
-                    <td>{{j.testigos}}</td>
-                    <td>{{j.caus_rolsdh?"SI":""}}</td>
-                    <td><a href="/causa.php/?id={{j.caus_id}}/">Ver ficha</a></td>
+                    <td class="text-center pb-1">{{j.cant_imputados}}</td>
+                    <td class="text-center pb-1">{{j.cant_victimas}}</td>
+
+                    <td class="text-center pb-1">{{j.testigos}}</td>
+                    <td class="text-center pt-2 pb-1"><i class="icono-arg-escudo-nacional" ng-show="j.caus_rolsdh"></i></td>
+                    <td class="pt-2 pb-1"><a href="/causa.php/?id={{j.caus_id}}/" class="btn  btn-sm btn-secondary m-0"><i class="icono-arg-revista"></i>
+ Ficha</a></td>
                 </tr>
             </tbody>
         </table>
@@ -51,3 +54,4 @@
         </div> -->
     </div>
 </div>
+</section>

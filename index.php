@@ -70,6 +70,8 @@
 
     <script src="scripts/sections/home/home.ctrl.js"></script>
     <script src="scripts/sections/home/metrics.ctrl.js"></script>
+    <script src="scripts/sections/home/durations.ctrl.js"></script>
+
     <script src="scripts/sections/home/agenda.ctrl.js"></script>
     <script src="scripts/sections/home/categories.ctrl.js"></script>
     <script src="scripts/sections/home/juicios.ctrl.js"></script>

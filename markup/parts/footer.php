@@ -1,6 +1,6 @@
 
 
-<footer class="main-footer">
+<footer class="main-footer pb-0 bg-gray mt-5">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-6">
