@@ -12,11 +12,7 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     
-        <script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/highcharts-more.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
-<script src="https://code.highcharts.com/modules/accessibility.js"></script>
-
+        
     <link rel="stylesheet" type="text/css" href="/styles/poncho.min.css">
     <link rel="stylesheet" type="text/css" href="/styles/icono-arg.css">
     <link rel="stylesheet" type="text/css" href="/markup/style.css" />
