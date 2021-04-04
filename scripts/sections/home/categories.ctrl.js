@@ -11,20 +11,20 @@ genApp
           
           $scope.categories = response.data.resultado.causas;
           $scope.loading = false;
-          startHighCharts();
+          startDataviz2();
           console.log('ok');
         },function(e){
           console.log('ko')
           $scope.loading = false;
         });
         
-        var startHighCharts = function(){
+        var startDataviz2 = function(){
          
         var dataset = {
           "children": 
             $scope.categories
             
-      };
+           };
 
          
       var diameter = d3.min([window.innerWidth*0.9,600]);
@@ -52,7 +52,7 @@ genApp
             .append("g")
             .attr("class", "node")
             .attr("transform", function(d) {
-                return "translate(" + d.x + "," + d.y + ")";
+                return isMobile?"translate(" + d.x + "," + d.y + ")":"translate(" + d.y + "," + d.x + ")";
             });
 
         node.append("title")

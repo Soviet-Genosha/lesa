@@ -15,5 +15,5 @@ var ES = d3.timeFormatDefaultLocale({
 });
 var formatNumber = ES.format("($.2f")
 
-var isMobile = window.innerWidth<600?1:0
+var isMobile = window.innerWidth<600?1:0, width = window.innerWidth;
 

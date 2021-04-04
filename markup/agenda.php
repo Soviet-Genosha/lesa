@@ -1,5 +1,5 @@
 <section class="agenda" ng-controller="AgendaController as homeCtrl">
-    <div class="container">
+    <div class="container px-0">
 
         <div class="agenda jumbotron">
           
@@ -30,7 +30,7 @@
                                     <div class="card-body">
                                         <p class="card-text m-0"><i class="fa fa-institution"></i> {{a.sede}}</p>
                                       <h5 class="card-title my-2">{{a.caus_nombre_vulgar}}</h5>
-                                      <a href="{{a.accesibilidad}}" class="card-link"  ng-show="!a.suspendida"><i class="icono-arg-credenciales"></i> Acreditación</a>
+                                      <a href="{{a.accesibilidad}}" class="card-link"  ng-show="!a.suspendida && a.accesibilidad"><i class="icono-arg-credenciales"></i> Acreditación</a>
                                     </div>
                                     <div class="card-footer " ng-show="a.transmision">
                                       <a ng-href="{{a.transmision}}" target="_blank" rel="noopener noreferrer" class="card-link" ><i class="icono-arg-youtube"></i> Ver en vivo</a>

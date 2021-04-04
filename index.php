@@ -67,6 +67,7 @@
     <script src="scripts/sections/home/home.ctrl.js"></script>
     <script src="scripts/sections/home/metrics.ctrl.js"></script>
     <script src="scripts/sections/home/durations.ctrl.js"></script>
+    <script src="scripts/sections/home/durationsMetrics.ctrl.js"></script>
 
     <script src="scripts/sections/home/agenda.ctrl.js"></script>
     <script src="scripts/sections/home/categories.ctrl.js"></script>

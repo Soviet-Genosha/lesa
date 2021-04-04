@@ -134,6 +134,10 @@ footer .logo-arg-container img {
   margin: 5px;
 }
 
+.tick text {
+  font-size: 11px;
+}
+
 @media (max-width: 768px) { 
 
   .agenda .card{
@@ -144,6 +148,11 @@ footer .logo-arg-container img {
     margin: 5px 0px;
     min-width: 100%;
   }
+
+  .tick text {
+    font-size: 14px;
+} 
+
 
 }
 
@@ -272,3 +281,4 @@ object-fit: cover;
     border-bottom:1px solid var(--green-feature-color);
     background-position: center;
   }
+
