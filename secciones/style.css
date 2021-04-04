@@ -347,3 +347,34 @@ object-fit: cover;
   float:right;
 }
 
+
+
+.referencia1, .referencia2, .referencia3 {
+  position: relative;
+  z-index: 1;
+  margin-left: 30px;
+}
+
+.referencia1::before, .referencia2::before, .referencia3::before {
+  position: absolute;
+  top: 50%;
+  overflow: hidden;
+  width: 20px;
+  height: 3px;
+  content: '\a0';
+  margin-left: -25px;
+  background-color: #999999;
+}
+
+
+.referencia2::before{
+  background-color: #c2d229;
+}
+
+
+.referencia3::before{
+  top: 33%;
+
+  height: 8px;
+  background-color: #6a7501;
+}
