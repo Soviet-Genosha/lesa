@@ -8,23 +8,18 @@
                 <p>Un juicio oral por crímenes de lesa humanidad tarda, en promedio, 2 años y 9 años desde el requerimiento de elevación a juicio hasta el veredicto, según números del Ministerio Público Fiscal. Los juicios orales actualmente abiertos muestran enormes lejanías con ese promedio. </p>
             </div>
 
-           
 
-            <div class="btn-group btn-group-toggle text-center" data-toggle="buttons">
-                Ordenar por: 
-                <label class="btn btn-secondary text-white py-0 ml-3 active">
-                  <input type="radio" name="options" ng-click="startDatavizDurations('nombre')" id="option1" checked> Nombre
-                </label>
-                <label class="btn btn-secondary text-white py-0">
-                  <input type="radio" name="options" ng-click="startDatavizDurations('Start')" id="option2"> Fecha requerimiento
-                </label>
-                <label class="btn btn-secondary text-white py-0">
-                  <input type="radio" name="options" ng-click="startDatavizDurations('etapa')" id="option3"> Inicio debate oral
-                </label>
-              </div>
-              
-            
-           
+                    <span class="d-md-block">Ordenar por:</span> 
+
+                    <div class="btn-group btn-group-toggle text-center" data-toggle="buttons">
+                        <label class="btn btn-secondary text-white py-0 ml-md-3  active">
+                        <input type="radio" name="options" ng-click="startDatavizDurations('nombre')" id="option1" checked>Nombre</label>
+                        <label class="btn btn-secondary text-white py-0">
+                        <input type="radio" name="options" ng-click="startDatavizDurations('Start')" id="option2">Requerimiento</label>
+                        <label class="btn btn-secondary text-white py-0">
+                        <input type="radio" name="options" ng-click="startDatavizDurations('etapa')" id="option3">Debate</label>
+                    </div>
+  
 
             <div class="graphic px-md-5" id="datavizDurations">
                

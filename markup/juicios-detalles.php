@@ -8,6 +8,7 @@
                 <p>La dimensión de los juicios está dada por la cantidad de testigos, de víctimas e imputados. La tabla reúne los detalles de los juicios orales abiertos en el país según las jurisdicciones, cantidad de imputados, testigos y víctimas. También señala los juicios orales en los que interviene la Secretaría de Derechos Humanos de la Nación como parte querellante.</p>
             </div>
 
+            <span class="d-block d-sm-none"><i class="fa fa-arrow-right" ></i></span>
         <table class="table  table-hover table-responsive ">
             <colgroup>
                 <col>
@@ -26,7 +27,7 @@
                     <th scope="col" ng-click="sortBy('testigos')" class="text-center"><a href=""><span>Testigos</span></a> 
                     </th>
                     
-                    <th scope="col" ng-click="sortBy('caus_rolsdh')" class="text-center"><a href=""><span title="Secretaría de Derechos Humanos Querellante">SDHN <i class="fa fa-info-circle"></i></span></a> 
+                    <th scope="col" ng-click="sortBy('caus_rolsdh')" class="text-center"><a href=""><span title="Secretaría de Derechos Humanos Querellante">SDHN <i class="fa fa-info-circle d-none d-sm-inline"></i></span></a> 
                     </th>
                     <th scope="col">
                     </th>

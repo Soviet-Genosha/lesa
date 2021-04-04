@@ -35,7 +35,7 @@ genApp
             }}).sort(orders.nombre);
             
   
-            var rowHeight = isMobile?60:40;
+            var rowHeight = isMobile?45:34;
             var height = data.length*rowHeight,
                 lineaAnchoMax = 6,
                 width = d3.min([window.innerWidth,700]),
@@ -92,21 +92,21 @@ genApp
                       .attr("x", 0)
                       .attr("y", -rowHeight/2 -3)
                       .attr("width", width)
-                      .attr("height", rowHeight-10)
-                      .attr("fill","#ffffffaa")
+                      .attr("height", rowHeight-6)
+                      .attr("fill","#ffffff")
                       ;
                       
               juicios.append("line")
-                  .attr("stroke", "darkgray")
-                  .attr("stroke-dasharray","4 2")
-                    .attr("stroke-width", 2)
+                  .attr("stroke", "#999")
+                  .attr("stroke-width", 2)
+
                   .attr("x1", d => x(d.requerimiento))
                   .attr("x2", d => x(d.elevacion || x.domain()[1]))
                   .attr("y1", 0)
                   .attr("y2", 0);
               
               juicios.append("line")
-                  .attr("stroke", "darkgray")
+                  .attr("stroke", "#c2d229")
                     .attr("stroke-width", 2)
                   .attr("x1", d => x(d.elevacion || x.domain()[1]))
                   .attr("x2", d => x(d.audiencia_preliminar || x.domain()[1]))
