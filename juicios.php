@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" type="text/css" href="/styles/poncho.min.css">
     <link rel="stylesheet" type="text/css" href="/styles/icono-arg.css">
-    <link rel="stylesheet" type="text/css" href="/markup/style.css" />
+    <link rel="stylesheet" type="text/css" href="/secciones/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -29,7 +29,7 @@
     <div class="root">
     <?php $currentPage = "juicios"; ?>
 
-        <?php include_once('./markup/header.php');  ?>
+        <?php include_once('./secciones/header.php');  ?>
         <div class="cases-grid py-4">
             <div class="container">
                 <div class="title">
@@ -60,7 +60,7 @@
                   
             </section>
         </div>
-        <?php include_once('./markup/footer.php');  ?>
+        <?php include_once('./secciones/footer.php');  ?>
     </div>
 
     </script>

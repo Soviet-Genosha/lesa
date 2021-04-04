@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" type="text/css" href="/styles/poncho.min.css">
     <link rel="stylesheet" type="text/css" href="/styles/icono-arg.css">
-    <link rel="stylesheet" type="text/css" href="/markup/style.css" />
+    <link rel="stylesheet" type="text/css" href="/secciones/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -30,7 +30,7 @@
     <div class="root" ng-controller="DetalleController as detalle">
         <?php $currentPage = "juicios"; ?>
 
-        <?php include_once('./markup/header.php');  ?>
+        <?php include_once('./secciones/header.php');  ?>
         <div class="case-description">
         <div class="container-fluid header-juicios" style="background-image:url(/images/Juicio/{{juicio.caus_icono}})">
                             </div>
@@ -96,7 +96,7 @@
      
 
         </div>
-           <?php include_once('./markup/footer.php');  ?>
+           <?php include_once('./secciones/footer.php');  ?>
     </div>
 
     </script>

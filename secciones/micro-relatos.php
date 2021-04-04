@@ -3,8 +3,13 @@
         <h2>Microrrelatos</h2>
         <p class="text-muted">Historias, testimonios y escenas de los juicios</p>
     </div>
-    <div ng-show="loading"> <progress class="loader-mail pure-material-progress-linear" />   </div>
-            <div class="card-deck d-flex flex-row flex-nowrap overflow-auto ng-cloak">
+    <div class="text-center" ng-show="loading">
+            <div class="spinner-border" role="status">
+              <span class="sr-only">Cargando...</span>
+            </div>
+          </div>
+          
+          <div class="card-deck d-flex flex-row flex-nowrap overflow-auto ng-cloak">
                 
 
               <div class="card shadow-sm" ng-repeat="relato in microrrelatos" ng-cloak>

@@ -15,7 +15,7 @@
         
     <link rel="stylesheet" type="text/css" href="/styles/poncho.min.css">
     <link rel="stylesheet" type="text/css" href="/styles/icono-arg.css">
-    <link rel="stylesheet" type="text/css" href="/markup/style.css" />
+    <link rel="stylesheet" type="text/css" href="/secciones/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -29,17 +29,17 @@
 <body ng-app="genApp">
     <div id="root">
         <?php $currentPage = "inicio"; ?>
-        <?php include_once('./markup/header.php');  ?>
-        <?php include_once('./markup/banner.php');  ?>
-        <?php include_once('./markup/micro-relatos-carousel.php');  ?> 
-        <?php include_once('./markup/agenda.php');  ?>
-        <?php include_once('./markup/metrics.php');  ?>
-        <?php include_once('./markup/categories.php');  ?>
-        <?php include_once('./markup/durations.php');  ?> 
-        <?php include_once('./markup/people.php');  ?>
-        <?php include_once('./markup/juicios-detalles.php'); ?> 
-        <?php include_once('./markup/condemned.php');  ?>
-        <?php include_once('./markup/footer.php');  ?>
+        <?php include_once('./secciones/header.php');  ?>
+        <?php include_once('./secciones/banner.php');  ?>
+        <?php include_once('./secciones/micro-relatos-carousel.php');  ?> 
+        <?php include_once('./secciones/agenda.php');  ?>
+        <?php include_once('./secciones/metrics.php');  ?>
+        <?php include_once('./secciones/temas.php');  ?>
+        <?php include_once('./secciones/durations.php');  ?> 
+        <?php include_once('./secciones/people.php');  ?>
+        <?php include_once('./secciones/juicios-detalles.php'); ?> 
+        <?php include_once('./secciones/condemned.php');  ?>
+        <?php include_once('./secciones/footer.php');  ?>
 
                 
     </div>
@@ -70,7 +70,7 @@
     <script src="scripts/sections/home/durationsMetrics.ctrl.js"></script>
 
     <script src="scripts/sections/home/agenda.ctrl.js"></script>
-    <script src="scripts/sections/home/categories.ctrl.js"></script>
+    <script src="scripts/sections/home/temas.ctrl.js"></script>
     <script src="scripts/sections/home/juicios.ctrl.js"></script>
     <script src="scripts/sections/home/microrrelatos.ctrl.js"></script>
 

@@ -4,8 +4,13 @@
         <div class="agenda jumbotron">
           
 
-            <div ng-show="loading"> <progress class="loader-mail pure-material-progress-linear" />   </div>
-            <div class="row" ng-cloak>
+        <div class="text-center" ng-show="loading">
+            <div class="spinner-border" role="status">
+              <span class="sr-only">Cargando...</span>
+            </div>
+          </div>
+          
+          <div class="row" ng-cloak>
                 <div class="col-12 text-center">
                 <h3>Agenda de próximas audiencias</h3>
                 </div>

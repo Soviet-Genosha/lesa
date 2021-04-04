@@ -25,13 +25,34 @@
                
 
             </div>
+            <div class="row">
+                <div class="çol">
+                    Referencias: 
+
+                </div>
+                <div class="çol">
+                    
+                </div>
+                <div class="çol">
+                    Referencias: 
+
+                </div>
+                <div class="çol">
+                    Referencias: 
+
+                </div>
+            </div>
         </section>
 
     <section ng-controller="DurationsMetricsController as homeCtrl">
         <h3 class="text-md-center">Métricas de duración de audiencias</h3>
-        <div ng-show="loading">
-            <progress class="loader-mail pure-material-progress-linear" />
-        </div>
+        
+        <div class="text-center" ng-show="loading">
+            <div class="spinner-border" role="status">
+              <span class="sr-only">Cargando...</span>
+            </div>
+          </div>
+      
         <div class="row" >
             
           <div class="col text-center" ng-repeat="m in datos" ng-cloak>

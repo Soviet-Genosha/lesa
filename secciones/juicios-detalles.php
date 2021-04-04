@@ -4,10 +4,17 @@
              <div class="title text-md-center">
                 <h3>Los juicios en detalle</h3>
             </div>
+            
             <div class="subtitle mt-md-4">
                 <p>La dimensión de los juicios está dada por la cantidad de testigos, de víctimas e imputados. La tabla reúne los detalles de los juicios orales abiertos en el país según las jurisdicciones, cantidad de imputados, testigos y víctimas. También señala los juicios orales en los que interviene la Secretaría de Derechos Humanos de la Nación como parte querellante.</p>
             </div>
 
+            <div class="text-center" ng-show="loading">
+            <div class="spinner-border" role="status">
+              <span class="sr-only">Cargando...</span>
+            </div>
+          </div>
+          
             <span class="d-block d-sm-none"><i class="fa fa-arrow-right" ></i></span>
         <table class="table  table-hover table-responsive ">
             <colgroup>

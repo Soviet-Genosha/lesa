@@ -3,8 +3,11 @@
           <div class="title text-md-center">
                   <h3>Microrrelatos</h3>
               </div>
-                <div ng-show="loading">
-              <progress class="loader-mail pure-material-progress-linear " />   </div>
+              <div class="text-center" ng-show="loading">
+            <div class="spinner-border" role="status">
+              <span class="sr-only">Cargando...</span>
+            </div>
+          </div>
             <div class="card-deck d-flex flex-row flex-nowrap overflow-auto ng-cloak ">
                 
 
