@@ -65,7 +65,7 @@
                                 "  ng-if="juicio.cant_imputados">    
                                             <h1 class="text-secondary mb-0">{{juicio.cant_imputados}} imputados<br>
                                             
-                                            <i class="icono-arg-hombre" ng-repeat="x in [].constructor(juicio.cant_imputados) track by $index">
+                                            <i class="fa fa-user" ng-repeat="x in [].constructor(juicio.cant_imputados) track by $index">
                                                 </i></h1>
                                         
                                             <p class="lead text-white"> {{juicio.imputados}} </p>
@@ -76,7 +76,7 @@
                                     </section>
                                     <section  ng-if="juicio.cant_victimas  != null">
                                             <h1 class="text-secondary mb-0">{{juicio.cant_victimas}} víctimas<br>
-                                            <i class="icono-arg-hombre" ng-repeat="x in [].constructor(juicio.cant_victimas) track by $index">
+                                            <i class="fa fa-user" ng-repeat="x in [].constructor(juicio.cant_victimas) track by $index">
                                                 </i></h1>
                                     </section>
 

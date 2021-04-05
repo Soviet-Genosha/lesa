@@ -1,6 +1,6 @@
 <section ng-controller="MetricsController as homeCtrl">
     <div class="container metrics">
-        <h2 class="text-md-center m-0 titulo">Datos</h2>
+        <h2 class="text-md-center m-0 titulo">Los juicios en datos</h2>
         <p class="text-muted text-center mt-1" ng-cloak>Actualizado {{actualizacion}}</p>
         <div class="text-center" ng-show="loading">
             <div class="spinner-border" role="status">

@@ -25,7 +25,7 @@
             </colgroup>
             <thead>
                 <tr>
-                    <th scope="col" ng-click="sortBy('jurisdiccion')"><a href=""><span>Jurisdicción</span></a></th>
+                    <th scope="col" ng-click="sortBy('caus_lugar')"><a href=""><span>Localidad</span></a></th>
                     <th scope="col" ng-click="sortBy('caus_nombre_vulgar')"><a href=""><span>Juicio</span></a></th>
                     <th scope="col" ng-click="sortBy('cant_imputados')" class="text-center"><a href=""><span>Imputados</span></a>
                     </th>
@@ -43,7 +43,7 @@
             </thead>
             <tbody>
                 <tr ng-repeat="j in juicios | orderBy:sortElement" ng-cloak>
-                    <td>{{j.jurisdiccion}}</td>
+                    <td>{{j.caus_lugar}}</td>
                     <td>{{j.caus_nombre_vulgar}}</td>
                     <td class="text-center pb-1">{{j.cant_imputados}}</td>
                     <td class="text-center pb-1">{{j.cant_victimas}}</td>

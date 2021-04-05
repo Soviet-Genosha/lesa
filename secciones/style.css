@@ -239,10 +239,14 @@ body.juicios-ficha p{
 
 
 li.nav-item, .navbar .navbar-brand {
-  font-size: 2em;
-  padding: 0 13px;
+  font-size: 1.3em;
+  padding: 0 8px;
+  height: auto;
 }
 
+.navbar{
+  min-height: auto;
+}
 
 img.card-img-top{
   height: 220px;
@@ -377,4 +381,9 @@ object-fit: cover;
 
   height: 8px;
   background-color: #6a7501;
+}
+
+
+.fa-user{
+  margin-right: 4px;
 }

@@ -1,6 +1,6 @@
-<nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+<nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light sticky-top  my-0 py-0">
   <div class="container-fluid"> 
-  <a class="navbar-brand" href="#">Alerta Lesa</a>
+  <a class="navbar-brand" href="/index.php">Juicios de Lesa</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
