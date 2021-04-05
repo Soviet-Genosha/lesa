@@ -3,7 +3,7 @@
 
 'use strict';
 genApp
-    .controller('DurationsController', function($scope, $http,medService) {
+    .controller('PeopleController', function($scope, $http,medService) {
         $scope.medService = medService;
         $scope.loading = true;
         $scope.ap = {};
@@ -14,15 +14,7 @@ genApp
           $scope.datos = response.data.resultado.causas;
           $scope.loading = false;
 
-          $scope.startDatavizDurations = function(order){
-
-
-            var orders = ({
-              Start: (a, b) => d3.ascending(a.start, b.start),
-              nombre: (a, b) => d3.ascending(a.name, b.name),
-              etapa: (a, b) => d3.descending((a.end || today) - a.debate, (b.end || today) - b.debate)
-            })
-
+          $scope.startDatavizPeople = function(){
 
             var data =  $scope.datos.filter(d=>d.requerimiento).map(d=>{ return {
               name:d.caus_nombre_vulgar,
@@ -42,7 +34,7 @@ genApp
                margin = ({top: 10, right: 10, bottom: 0, left: 10});
   
 
-            var today = new Date();
+            var today = new Date(Date.UTC(2021, 3, 24));
   
                     
   

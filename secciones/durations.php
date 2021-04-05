@@ -42,7 +42,8 @@
             </div>
         </section>
 
-    <section ng-controller="DurationsMetricsController as homeCtrl">
+    <section ng-controller="DurationsMetricsController as homeCtrl" class="mb-5">
+        <div class="bg-light p-2 ">
         <h3 class="text-md-center">Métricas de duración de audiencias</h3>
         
         <div class="text-center" ng-show="loading">
@@ -60,8 +61,9 @@
                 <div class="h6 font-weight-normal my-1" ng-show="!m.subtitulo">({{m.referencia}})</div>
 
           </div>
-          
-      </div>
+            
+            </div>
+        </div>
     </section>
     </div>
 </section>

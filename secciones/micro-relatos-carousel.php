@@ -23,7 +23,7 @@
          
             </div>
             
-            <a href="/microrrelatos.php" class="btn btn-secondary stretched-link my-1">Ver todos los microrrelatos</a>
+            <a href="/microrrelatos.php" class="btn btn-secondary stretched-link my-1"><i class="icono-arg-youtube"></i> Ver todos los microrrelatos</a>
 
 
 </section>

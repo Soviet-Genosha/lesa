@@ -48,7 +48,7 @@
                                 <p class="card-text">{{relato.descripcion}}</p>
                             </div>
                             <div class="card-footer text-center">
-                                <a href="./causa.php/?id={{relato.url_video}}" target="_self" class="card-link btn btn-primary "><i class="icono-arg-youtube"></i>
+                                <a href="{{relato.url_video}}" target="_blank" class="card-link btn btn-primary "><i class="icono-arg-youtube"></i>
  Reproducir</a>
                             </div>
                             </div>
