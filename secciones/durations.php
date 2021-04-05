@@ -26,17 +26,20 @@
 
             </div>
             <div class="row mx-5 text-center">
-                <div class="col-12 col-md-2 offset-md-2">
+                <div class="col-12 col-md ">
                     Referencias:
                 </div>
-                <div class="col-12  col-md-2">
-                <span class="referencia1">Requerimiento</span>
+                <div class="col-12  col-md">
+                    <span class="referencia1">Requerimiento</span>
                 </div>
-                <div class="col-12  col-md-2">
-                <span class="referencia2">Elevación</span>
+                <div class="col-12  col-md">
+                    <span class="referencia2">Elevación</span>
                 </div>
-                <div class="col-12  col-md-2">
-                <span class="referencia3">Debate oral</span>
+                <div class="col-12  col-md">
+                    <span class="referencia3">Audiencia</span>
+                </div>
+                <div class="col-12  col-md">
+                    <span class="referencia4">Debate oral</span>
                 </div>
                 
             </div>

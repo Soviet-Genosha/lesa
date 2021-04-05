@@ -29,6 +29,7 @@ genApp
               start: new Date(d.requerimiento.slice(0,10)),
               requerimiento: new Date(d.requerimiento.slice(0,10)),
               elevacion: d.elevacion?new Date(d.elevacion.slice(0,10)):null,
+              audiencia_preliminar: d.audiencia_preliminar?new Date(d.audiencia_preliminar.slice(0,10)):null,
               debate: d.debate?new Date(d.debate.slice(0,10)):null,
               cantvictimas: d.cantvictimas
             
@@ -99,27 +100,28 @@ genApp
               juicios.append("line")
                   .attr("stroke", "#999")
                   .attr("stroke-width", 2)
+                  .attr("stroke-dasharray", "2 2")
 
                   .attr("x1", d => x(d.requerimiento))
-                  .attr("x2", d => x(d.elevacion || x.domain()[1]))
+                  .attr("x2", d => x(d.elevacion || x.domain()[1])-1)
                   .attr("y1", 0)
                   .attr("y2", 0);
               
               juicios.append("line")
-                  .attr("stroke", "#c2d229")
+                  .attr("stroke", "#999")
                     .attr("stroke-width", 2)
                   .attr("x1", d => x(d.elevacion || x.domain()[1]))
-                  .attr("x2", d => x(d.audiencia_preliminar || x.domain()[1]))
+                  .attr("x2", d => x(d.audiencia_preliminar || x.domain()[1])-1)
                   .attr("y1", 0)
                   .attr("y2", 0);
               
-            //   juicios.append("line")
-            //       .attr("stroke", "red")
-            //         .attr("stroke-width", 8)
-            //       .attr("x1", d => x(d.audiencia_preliminar || x.domain()[1]))
-            //       .attr("x2", d => x(d.debate || x.domain()[1]))
-            //       .attr("y1", 0)
-            //       .attr("y2", 0);
+            juicios.append("line")
+                .attr("stroke", "#c2d229")
+                  .attr("stroke-width", 2)
+                .attr("x1", d => x(d.audiencia_preliminar || x.domain()[1]))
+                .attr("x2", d => x(d.debate || x.domain()[1])-1)
+                .attr("y1", 0)
+                .attr("y2", 0);
               
               juicios.append("line")
                   .attr("stroke", "#6A7501")
