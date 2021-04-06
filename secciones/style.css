@@ -38,7 +38,7 @@ p {
   color: var(--text-color);
 }
 
-body{
+body, svg text{
     font-family: "Encode Sans", sans-serif;
   
 }
@@ -239,10 +239,14 @@ body.juicios-ficha p{
 
 
 li.nav-item, .navbar .navbar-brand {
-  font-size: 2em;
-  padding: 0 13px;
+  font-size: 1.3em;
+  padding: 0 8px;
+  height: auto;
 }
 
+.navbar{
+  min-height: auto;
+}
 
 img.card-img-top{
   height: 220px;
@@ -355,7 +359,7 @@ object-fit: cover;
   margin-left: 30px;
 }
 
-.referencia1::before, .referencia2::before, .referencia3::before {
+.referencia1::before, .referencia2::before, .referencia3::before, .referencia4::before {
   position: absolute;
   top: 50%;
   overflow: hidden;
@@ -363,18 +367,30 @@ object-fit: cover;
   height: 3px;
   content: '\a0';
   margin-left: -25px;
-  background-color: #999999;
+  border-bottom: 3px solid #999999;
+  
 }
-
-
+.referencia1::before{
+border-bottom-style:dotted;
+}
 .referencia2::before{
-  background-color: #c2d229;
+  border-bottom: 3px solid #999999;
+  
 }
 
 
 .referencia3::before{
-  top: 33%;
+  border-bottom: 3px solid  #c2d229;
+  
+}
 
-  height: 8px;
-  background-color: #6a7501;
+.referencia4::before{
+  top:38%;
+    border-bottom: 8px solid  #6a7501;
+  
+}
+
+
+.fa-user{
+  margin-right: 4px;
 }
