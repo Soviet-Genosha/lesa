@@ -25,20 +25,21 @@
                
 
             </div>
-            <div class="row mx-1 mx-md-5 text-center">
-                <div class="col-12 col-md-3 col-lg-2 offset-lg-4 offset-md-0 text-xs-right">
+            <div class="row text-center mx-0 d-flex justify-content-center">
+                
+               <div class="px-2">
                     Referencias:
                 </div>
-                <div class="col-12 col-md-3 col-lg-2  text-xs-right">
+                <div class="px-2">
                     <span class="referencia1">Requerimiento</span>
                 </div>
-                <div class="col-12 col-md-3 col-lg-2  text-xs-right">
+                <div class="px-2">
                     <span class="referencia2">Elevación</span>
                 </div>
-               <!--  <div class="col-12  col-lg text-xs-right">
+               <!--  <div class="px-2">
                     <span class="referencia3">Audiencia</span>
                 </div> -->
-                <div class="col-12 col-md-3 col-lg-2  text-xs-right">
+                <div class="px-2">
                     <span class="referencia4">Debate oral</span>
                 </div>
                 

@@ -38,7 +38,7 @@
         <?php include_once('./secciones/durations.php');  ?> 
         <?php include_once('./secciones/people.php');  ?>
         <?php include_once('./secciones/juicios-detalles.php'); ?> 
-        <?php include_once('./secciones/condemned.php');  ?>
+        <?php //include_once('./secciones/condemned.php');  ?>
         <?php include_once('./secciones/footer.php');  ?>
 
                 

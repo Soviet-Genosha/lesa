@@ -1,7 +1,7 @@
-<section class="my-5">
+<section class="my-md-3">
 <div class="juicios-detalle mt-5" ng-controller="JuiciosController as homeCtrl">
     <div class="container py-3 border shadow-sm rounded-sm ">
-             <div class="title text-md-center">
+             <div class="title text-center">
                 <h3>Los juicios en detalle</h3>
             </div>
             
@@ -15,8 +15,8 @@
             </div>
           </div>
           
-            <span class="d-block d-sm-none"><i class="fa fa-arrow-right" ></i></span>
-        <table class="table  table-hover table-responsive ">
+          <div class="d-block d-sm-none clearfix"><i class="fa fa-arrow-right" ></i></div>
+                  <table class="table  table-hover table-responsive ">
             <colgroup>
                 <col>
                 <col>
