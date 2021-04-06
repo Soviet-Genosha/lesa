@@ -16,6 +16,9 @@
         <li class="nav-item <?php if($currentPage == "microrrelatos") echo "active" ; ?>">
           <a class="nav-link" href="/microrrelatos.php" target="_self">Microrrelatos</a>
         </li>
+        <li class="nav-item <?php if($currentPage == "institucional") echo "active" ; ?>">
+          <a class="nav-link" href="/institucional.php" target="_self">Institucional</a>
+        </li>
       </ul>
     </div>
   </div>
