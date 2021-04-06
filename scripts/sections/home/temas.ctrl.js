@@ -43,8 +43,9 @@ genApp
             .sum(function(d) { return d.cantidad; })
             .sort((a, b) => b.value - a.value);
 
+            var circlePacked = bubble(nodes).descendants();
         var node = svg.selectAll(".node")
-            .data(bubble(nodes).descendants())
+            .data(circlePacked)
             .enter()
             .filter(function(d){
                 return  !d.children
@@ -55,16 +56,41 @@ genApp
                 return isMobile?"translate(" + d.x + "," + d.y + ")":"translate(" + d.y + "," + d.x + ")";
             });
 
+
+            var ajuste = isMobile?0:100;
+            var box = {
+              y0 : d3.min(circlePacked.slice(1),d=>d.y-d.r)+ajuste,
+              y1 : d3.max(circlePacked.slice(1),d=>d.y+d.r)+ajuste,
+              x0 : d3.min(circlePacked.slice(1),d=>d.x-d.r)-ajuste,
+              x1 : d3.max(circlePacked.slice(1),d=>d.x+d.r)-ajuste
+            };
+
+            var vbHeight = box.y1 - box.y0+4,
+                vbWidth = box.x1 - box.x0+4;
+
+            svg.attr("viewBox",[box.x0-2, box.y0-2, !isMobile?vbHeight:vbWidth, isMobile?vbHeight:vbWidth].join(" "))
+
+           /*  svg.append("rect")
+            .attr("fill","none")
+            .attr("stroke", "black")
+              .attr("x", box.x0)
+              .attr("y", box.y0)
+              .attr(!isMobile?"width":"height", box.y1 - box.y0)
+              .attr(isMobile?"width":"height", box.x1 - box.x0); */
+
+
+        
         node.append("title")
             .text(function(d) {
                 return d.data.descripcion;
             });
 
-        node.append("circle")
+       node.append("circle")
             .attr("r", function(d) {
                 return d.r;
             })
             .style("fill", "silver");
+
 
         node.filter(d => d.r>30).append("text")
               .each(d => {

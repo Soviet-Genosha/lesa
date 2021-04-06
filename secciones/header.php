@@ -6,7 +6,7 @@
   </button>
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-      <ul class="navbar-nav ">
+      <ul class="navbar-nav text-right ">
         <li class="nav-item <?php if($currentPage == "inicio") echo "active"; ?>">
           <a class="nav-link" href="/index.php" target="_self">Inicio</a>
         </li>
