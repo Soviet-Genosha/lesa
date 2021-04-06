@@ -36,9 +36,10 @@ genApp
             }}).sort(orders.nombre);
             
   
-            var rowHeight = isMobile?45:34;
+            var rowHeight = isMobile?50:34;
             var height = data.length*rowHeight,
-                lineaAnchoMax = 6,
+                lineaAnchoMax = isMobile?10:6,
+                lineYPos = isMobile?5:2,
                 width = d3.min([window.innerWidth,700]),
                margin = ({top: 10, right: 10, bottom: 0, left: 10});
   
@@ -99,37 +100,37 @@ genApp
                       
               juicios.append("line")
                   .attr("stroke", "#999")
-                  .attr("stroke-width", 2)
+                  .attr("stroke-width",lineaAnchoMax/3)
                   .attr("stroke-dasharray", "2 2")
 
                   .attr("x1", d => x(d.requerimiento))
                   .attr("x2", d => x(d.elevacion || x.domain()[1])-1)
-                  .attr("y1", 0)
-                  .attr("y2", 0);
+                  .attr("y1", lineYPos)
+                  .attr("y2", lineYPos);
               
               juicios.append("line")
                   .attr("stroke", "#999")
-                    .attr("stroke-width", 2)
+                    .attr("stroke-width", lineaAnchoMax/3)
                   .attr("x1", d => x(d.elevacion || x.domain()[1]))
                   .attr("x2", d => x(d.audiencia_preliminar || x.domain()[1])-1)
-                  .attr("y1", 0)
-                  .attr("y2", 0);
+                  .attr("y1", lineYPos)
+                  .attr("y2", lineYPos);
               
             juicios.append("line")
                 .attr("stroke", "#c2d229")
-                  .attr("stroke-width", 2)
+                  .attr("stroke-width",lineaAnchoMax/3)
                 .attr("x1", d => x(d.audiencia_preliminar || x.domain()[1]))
                 .attr("x2", d => x(d.debate || x.domain()[1])-1)
-                .attr("y1", 0)
-                .attr("y2", 0);
+                .attr("y1", lineYPos)
+                .attr("y2", lineYPos);
               
               juicios.append("line")
                   .attr("stroke", "#6A7501")
                   .attr("stroke-width", lineaAnchoMax)
                   .attr("x1", d => x(d.debate || x.domain()[1]))
                   .attr("x2", d => x(d.end || x.domain()[1]))
-                  .attr("y1", 0)
-                  .attr("y2", 0);
+                  .attr("y1", lineYPos)
+                  .attr("y2", lineYPos);
             
               
                   juicios.append("text")
@@ -138,7 +139,7 @@ genApp
                   .attr("text-anchor", "end")
   
                   .attr("x", d => x.range()[1])
-                  .attr("y", 0)
+                  .attr("y", lineYPos/2)
                   .attr("dy", (-lineaAnchoMax/2 - 4)+"px")
                   .attr("fill-opacity", d => d.end === null ? null : 1)
                   .text(d => d.name);

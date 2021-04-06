@@ -1,6 +1,6 @@
 <section class="durations mt-4"  >
     <div class="container">
-            <div class="title text-md-center">
+            <div class="title text-center">
                 <h3>Acusados</h3>
             </div>
             <div class="subtitle mt-md-4">

@@ -1,6 +1,6 @@
 <div class="categories mt-4 mt-md-5" ng-controller="CategoriesController as homeCtrl">
     <div class="container">
-        <div class="title text-md-center">
+        <div class="title text-center">
             <h3>Los grandes temas</h3>
         </div>
         <div class="subtitle mt-md-4">

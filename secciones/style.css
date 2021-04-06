@@ -394,3 +394,8 @@ border-bottom-style:dotted;
 .fa-user{
   margin-right: 4px;
 }
+
+.navbar-toggler-icon {
+  width: 1em;
+  height: 1em;
+}

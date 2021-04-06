@@ -1,6 +1,6 @@
-<section class="microrrelatos container border rounded-sm  p-2 mt-5 mb-5 shadow-sm text-md-center position-relative" ng-controller="MicrorrelatosController as homeCtrl">
+<section class="microrrelatos container border rounded-sm  p-2 mt-5 mb-5 shadow-sm text-center position-relative" ng-controller="MicrorrelatosController as homeCtrl">
     
-          <div class="title text-md-center">
+          <div class="title text-center">
                   <h3>Microrrelatos</h3>
               </div>
               <div class="text-center" ng-show="loading">
@@ -23,7 +23,7 @@
          
             </div>
             
-            <a href="/microrrelatos.php" class="btn btn-secondary stretched-link my-1"><i class="icono-arg-youtube"></i> Ver todos los microrrelatos</a>
+            <a href="/microrrelatos.php" class="btn btn-secondary my-1"><i class="icono-arg-youtube"></i> Ver todos los microrrelatos</a>
 
 
 </section>

@@ -25,20 +25,20 @@
                
 
             </div>
-            <div class="row mx-5 text-center">
-                <div class="col-12 col-md ">
+            <div class="row mx-1 mx-md-5 text-center">
+                <div class="col-12 col-md-3 col-lg-2 offset-lg-4 offset-md-0 text-xs-right">
                     Referencias:
                 </div>
-                <div class="col-12  col-md">
+                <div class="col-12 col-md-3 col-lg-2  text-xs-right">
                     <span class="referencia1">Requerimiento</span>
                 </div>
-                <div class="col-12  col-md">
+                <div class="col-12 col-md-3 col-lg-2  text-xs-right">
                     <span class="referencia2">Elevación</span>
                 </div>
-                <div class="col-12  col-md">
+               <!--  <div class="col-12  col-lg text-xs-right">
                     <span class="referencia3">Audiencia</span>
-                </div>
-                <div class="col-12  col-md">
+                </div> -->
+                <div class="col-12 col-md-3 col-lg-2  text-xs-right">
                     <span class="referencia4">Debate oral</span>
                 </div>
                 
@@ -47,7 +47,8 @@
 
     <section ng-controller="DurationsMetricsController as homeCtrl" class="mb-5">
         <div class="bg-light p-2 ">
-        <h3 class="text-md-center">Métricas de duración de audiencias</h3>
+        <h5 class="text-center mb-0">Métricas de duración de audiencias</h5>
+        <p class="text-muted text-center mt-1 ng-binding">Últimos treinta días</p>
         
         <div class="text-center" ng-show="loading">
             <div class="spinner-border" role="status">

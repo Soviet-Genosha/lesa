@@ -26,7 +26,7 @@
             <thead>
                 <tr>
                     <th scope="col" ng-click="sortBy('caus_lugar')"><a href=""><span>Localidad</span></a></th>
-                    <th scope="col" ng-click="sortBy('caus_nombre_vulgar')"><a href=""><span>Juicio</span></a></th>
+                    <th scope="col" style="min-width:150px" ng-click="sortBy('caus_nombre_vulgar')"><a href=""><span>Juicio</span></a></th>
                     <th scope="col" ng-click="sortBy('cant_imputados')" class="text-center"><a href=""><span>Imputados</span></a>
                     </th>
                     <th scope="col" ng-click="sortBy('cant_victimas')" class="text-center"><a href=""><span>Victimas</span></a> 

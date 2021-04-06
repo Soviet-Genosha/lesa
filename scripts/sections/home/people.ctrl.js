@@ -16,7 +16,7 @@ genApp
 
           $scope.startDatavizPeople = function(){
 
-            var data =  $scope.datos.filter(d=>d.requerimiento).map(d=>{ return {
+            var data =  $scope.datos.map(d=>{ return {
               name:d.caus_nombre_vulgar,
               start: new Date(d.requerimiento.slice(0,10)),
               requerimiento: new Date(d.requerimiento.slice(0,10)),
