@@ -9,11 +9,7 @@ genApp
         $http.get(URL_PREFIX + 'agenda')
         .then(function(response){
 
-          response.data.resultado.agenda.forEach(d=>{
-            if(d.accesibilidad) d.accesibilidad = d.accesibilidad.search('@')>0?("mailto://"+d.accesibilidad):d.accesibilidad;
-
-
-          })
+          response.data.resultado.agenda;
           $scope.agenda = d3.nest()
                         .key(function(d) { return d3.timeParse("%Y-%m-%d")(d.proxima_audiencia); })
                         .sortKeys((a, b) => new Date(a) - new Date(b))
