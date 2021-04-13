@@ -4,8 +4,8 @@
             <div class="title text-center">
                 <h3>Monitor de velocidad</h3>
             </div>
-            <div class="subtitle mt-md-4 mx-md-5 text-left" >
-                <p>Un juicio oral por crímenes de lesa humanidad tarda, en promedio, 2 años y 9 años desde el requerimiento de elevación a juicio hasta el veredicto, según números del Ministerio Público Fiscal. Los juicios orales actualmente abiertos muestran enormes lejanías con ese promedio. </p>
+            <div class="subtitle mt-md-4 col-lg-8 offset-lg-2 text-left" >
+                <p>Un juicio oral por crímenes de lesa humanidad tarda, en promedio, 2 años y 9 meses desde el requerimiento de elevación a juicio hasta el veredicto, según números del Ministerio Público Fiscal. Los juicios orales actualmente abiertos muestran enormes lejanías con ese promedio. </p>
             </div>
 
 

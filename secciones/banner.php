@@ -1,7 +1,15 @@
-<div class="banner jumbotron jumbotron-fluid">
-  <div class="container text-center">
-    <h1 class="display-1" style = "mb-0">Juicios de Lesa</h1>
-    <h3 class="text-muted">Los juicios orales a la dictadura argentina en tiempo real</h3>
-    <p class="lead">Historias, datos y agenda de los juicios orales abiertos hoy en todo el país por los crímenes de lesa humanidad de la dictadura cívico-militar. Seguimiento de las audiencias testimoniales, alegatos y sentencias en vivo. Análisis de la velocidad de los debates, para dar cuenta de alertas y demoras. Los juicios orales en datos.</p>
+<div class="banner jumbotron jumbotron-fluid ">
+  <div class="container">
+  <div class=" row py-5 my-4 justify-content-md-center">
+    <div class="col-12 col-lg-4 px-3 px-sm-0">
+      <h1 class="text-black font-weight-bold my-0">Juicios de Lesa Humanidad</h1>
+      <h2 class="text-black font-weight-normal my-0">en tiempo real</h2>
+    </div>
+    <div class="col-12 col-lg-4 pt-3 px-3 px-sm-0">
+      <p class="lead font-weight-normal">Historias, datos y agenda de los juicios orales. Seguimiento de las audiencias en vivo. Análisis de la velocidad de los debates. Los juicios en datos.
+
+      </p>
+    </div>
   </div>
+</div>
 </div>

@@ -1,6 +1,6 @@
 <section class="microrrelatos container border rounded-sm  p-2 mt-5 mb-5 shadow-sm text-center position-relative" ng-controller="MicrorrelatosController as homeCtrl">
     
-          <div class="title text-center">
+          <div class="text-center">
                   <h3>Microrrelatos</h3>
               </div>
               <div class="text-center" ng-show="loading">

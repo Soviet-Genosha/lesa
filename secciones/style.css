@@ -99,14 +99,11 @@ footer .logo-arg-container img {
 
 
 .banner h1{
-  margin-bottom: 0;
-    font-weight: 600;
-    text-shadow: -1px 6px 11px #000000;
+  font-size: 2.5em;
 }
 
-.banner h3, .banner p{
-  color: white!important;
-  opacity: 1!important;
+.banner h2{
+  font-size: 1.8em;
 
 }
 
@@ -151,7 +148,14 @@ footer .logo-arg-container img {
 
   .tick text {
     font-size: 14px;
-} 
+  } 
+
+  .table td, .table th {
+      padding: .25rem;
+      vertical-align: middle;
+      font-size:smaller;
+
+  }
 
 
 }
@@ -409,4 +413,12 @@ border-bottom-style:dotted;
 
 #datavizPeople {
   overflow: auto;
+}
+
+.title h3{
+  font-size: 1.4em!important;
+  background-color: #cddc39;
+  width: fit-content;
+  margin: auto;
+  padding: 3px 12px;
 }
