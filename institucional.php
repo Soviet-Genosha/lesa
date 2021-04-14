@@ -62,7 +62,7 @@
 
                 </p>
                 <p>
-                    El sitio consiste en una base de datos que reúne en un solo lugar la información hasta ahora fragmentada de los 19 juicios orales que están en desarrollo, con seguimiento de testimonios, sentencias y audiencias en vivo.  
+                    El sitio consiste en una base de datos que reúne en un solo lugar la información hasta ahora fragmentada de los juicios orales que están en desarrollo, con seguimiento de testimonios, sentencias y audiencias en vivo.  
 
                 </p>
 
