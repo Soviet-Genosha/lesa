@@ -31,13 +31,35 @@
         <?php include_once('./secciones/header.php');  ?>
         <div class="cases-grid py-4">
             <div class="container">
-                <div class="text-center">
-                    <h1>Sobre este proyecto</h1>
+
+            <section class=bg-gray>
+                <div class="title text-center">
+                    <h2>Autoridades</h2>
+                
+                </div>
+
+                <div class="row ">
+                    <div class="col-12 col-md-6 mx-auto my-5 text-xs-center">
+                <div class="lead font-weight-bold my-2">Ministerio de Justicia y Derechos Humanos</div>
+                <div class="lead my-2 mb-4">Martín Ignacio Soria</div>
+                <div class="lead font-weight-bold my-2">Secretaría de Derechos Humanos de la Nación</div>
+                <div class="lead my-2 mb-4">Horacio Pietragalla Corti</div>
+                <div class="lead font-weight-bold my-2">Dirección de Coordinación Estratégica</div>
+                <div class="lead my-2 mb-4">Nicolás M. Rapetti</div>
+                    </div>
+                </div>
+
+            </section>
+         <section class="mx-auto col-12 col-md-8 ">
+
+                <div class="title text-center">
+                    <h2 class="my-4">Sobre este proyecto</h2>
                 
                 </div>
 
                 <p>
-                    Juicios de Lesa pretende ser un observatorio de los juicios por crímenes de lesa humanidad de la dictadura cívico-militar que se desarrollan en todo el país. Se trata de una herramienta creada por el Estado Nacional para contribuir a mostrar, comunicar e impulsar el desarrollo del proceso de Memoria, Verdad y Justicia.
+                    Juicios de Lesa Humanidad pretende ser un observatorio de los juicios por crímenes de lesa humanidad cometidos durante el terrorismo de Estado, que se desarrollan en todo el país. Se trata de una herramienta creada por el Estado Nacional para contribuir a mostrar, comunicar e impulsar el desarrollo del proceso de Memoria, Verdad y Justicia.
+
                 </p>
                 <p>
                     El sitio consiste en una base de datos que reúne en un solo lugar la información hasta ahora fragmentada de los 19 juicios orales que están en desarrollo, con seguimiento de testimonios, sentencias y audiencias en vivo.  
@@ -73,7 +95,7 @@
                 <h3>Acusados fuera de juicio
                 </h3>
            <p>
-                Un gráfico actualizado muestra a los acusados de cada uno de los debates, así como los que fueron quedando afuera por razones de salud o fallecimiento.
+            Un gráfico actualizado muestra a los acusados de cada uno de los debates, así como los que fueron quedando afuera por razones de salud o fallecimiento.
 
             </p>
 
@@ -92,33 +114,10 @@
             Desde septiembre de 2020, la Secretaría comenzó a estandarizar la información para construir una primera base de datos sobre los juicios de lesa humanidad, que elaborada por un equipo integrado por comunicadores, periodistas, diseñadores y desarrolladores. Se trata de una primera etapa de un proyecto que tiene como objetivo final poner en línea la totalidad de los juicios actuales, próximos y pasados.
  
          </p>
- 
 
 
-         <section>
-            <h3>Créditos
-            </h3>
-            <dl class="row">
-                <dt class="col-sm-3">Equipo investigacion</dt>
-                <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
-              
-                <dt class="col-sm-3">Desarrollo</dt>
-                <dd class="col-sm-9">
-                  <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
-                  <p>Donec id elit non mi porta gravida at eget metus.</p>
-                </dd>
-              
-                <dt class="col-sm-3">Direccion</dt>
-                <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
-              
-                <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
-                <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
-              
-                
-              </dl>
 
-         </section>
-
+</section>
         </div>
         <?php include_once('./secciones/footer.php');  ?>
     </div>

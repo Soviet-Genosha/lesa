@@ -9,7 +9,7 @@
             </div>
           </div>
           
-          <div class="card-deck d-flex flex-row flex-nowrap overflow-auto ng-cloak">
+          <div class="card-deck d-flex flex-row flex-nowrap overflow-auto " >
                 
 
               <div class="card shadow-sm" ng-repeat="relato in microrrelatos" ng-cloak>

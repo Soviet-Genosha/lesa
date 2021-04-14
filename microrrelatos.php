@@ -36,7 +36,7 @@
                     <h1>Microrrelatos</h1>
                    <h3>Historias, testimonios y escenas de los juicios</h3>
                 </div>
-                <section ng-controller="MicrorrelatosController as MicrorrelatosController">
+                <section ng-controller="MicrorrelatosController as MicrorrelatosController" ng-cloak>
 
                 <div class="row row-cols-1 row-cols-md-3">
                         <div class="col mb-4" ng-repeat="relato in microrrelatos">
