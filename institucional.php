@@ -29,7 +29,7 @@
     <?php $currentPage = "institucional"; ?>
 
         <?php include_once('./secciones/header.php');  ?>
-        <div class="cases-grid py-4">
+        <div class="cases-grid pt-4">
             <div class="container">
 
             <section class=bg-gray>

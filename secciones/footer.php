@@ -6,7 +6,7 @@
             
 
             
-            <div class="col text-center text-sm-left">
+            <div class="col-12 col-sm-8 text-center text-sm-left">
                 <a href="https://www.facebook.com/SDHArgentina" target="_blank" class="text-decoration-none text-black   ml-0 pr-2 align-middle">
                     <i class="fa fa-facebook"></i>
                   </a>
@@ -26,14 +26,14 @@
                 <div class="region region-footer2 mt-1">
 
                         <ul class="menu text-black">
-                            <li class="leaf">Av. Del Libertador 8151</li>
-                            <li class="leaf">Espacio Memoria y Derechos Humanos (Ex ESMA)</li>
-                            <li class="leaf">Ciudad de Buenos Aires, Argentina</li>
+                            <li >Av. Del Libertador 8151</li>
+                            <li >Espacio Memoria y Derechos Humanos (Ex ESMA)</li>
+                            <li >Ciudad de Buenos Aires, Argentina</li>
                         </ul>
                 </div>
             </div>
-            <div class="col mt-sm-1 text-right">
-                <img src="/images/logo SDHNi.png" class="w-75 align-middle">
+            <div class="col-12 col-sm-4 mt-sm-1 text-right">
+                <img src="/images/logo SDHNi.png" class="w-100  align-middle">
             </div>
 
         </div>
