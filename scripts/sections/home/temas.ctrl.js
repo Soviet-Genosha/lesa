@@ -56,8 +56,7 @@ genApp
                 return isMobile?"translate(" + d.x + "," + d.y + ")":"translate(" + d.y + "," + d.x + ")";
             });
 
-
-            var ajuste = isMobile?0:100;
+            var ajuste = isMobile?0:80;
             var box = {
               y0 : d3.min(circlePacked.slice(1),d=>d.y-d.r)+ajuste,
               y1 : d3.max(circlePacked.slice(1),d=>d.y+d.r)+ajuste,
@@ -65,10 +64,10 @@ genApp
               x1 : d3.max(circlePacked.slice(1),d=>d.x+d.r)-ajuste
             };
 
-            var vbHeight = box.y1 - box.y0+4,
-                vbWidth = box.x1 - box.x0+4;
+            var vbHeight = box.y1 - box.y0+10,
+                vbWidth = box.x1 - box.x0+10;
 
-            svg.attr("viewBox",[box.x0-2, box.y0-2, !isMobile?vbHeight:vbWidth, isMobile?vbHeight:vbWidth].join(" "))
+            svg.attr("viewBox",[box.x0-5, box.y0-5, !isMobile?vbHeight:vbWidth, isMobile?vbHeight:vbWidth].join(" "))
 
            /*  svg.append("rect")
             .attr("fill","none")

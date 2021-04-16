@@ -10,6 +10,9 @@ genApp
         .then(function(response){
           
           $scope.juicios = response.data.resultado.causas ;
+          $scope.juicios.forEach(element => {
+              element.caus_icono = element.caus_icono?element.caus_icono:"default.jpg"
+          });
           $scope.loading = false;
           console.log('ok');
         },function(e){

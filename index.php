@@ -2,6 +2,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Historias, estadísticas y agenda de los juicios orales por crímenes de lesa humanidad. Seguimiento de las audiencias en vivo. Análisis de la velocidad de los debates. Los juicios en datos.  ">
+  <meta name="keywords" content="lesa humanidad, juicios de lesa humanidad, juicios por crímenes de lesa humanidad, dictadura militar, golpe de estado, terrorismo de estado, juicios orales lesa, audiencias lesa, juicios lesa, causas lesa, genocidas, memoria verdad y justicia, estadísticas lesa humanidad,datos lesa humanidad.">
+  <meta name="author" content="Secretaria de Derechos Humanos de la Nación, Argentina">
+
+  
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200;400;700&amp;display=swap"
         rel="stylesheet" type="text/css">
