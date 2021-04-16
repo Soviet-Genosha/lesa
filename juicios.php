@@ -38,7 +38,7 @@
                 <div class="subtitle">
                     <p>Descripción de los debates orales actuales por crímenes de lesa humanidad en todo el país.</p>
                 </div>
-                <section ng-controller="HomeController as homeController">
+                <section ng-controller="HomeController as homeController" ng-cloak>
 
                 <div class="row row-cols-1 row-cols-md-3">
                         <div class="col mb-4" ng-repeat="j in juicios">

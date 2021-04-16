@@ -56,7 +56,8 @@ genApp
                 return isMobile?"translate(" + d.x + "," + d.y + ")":"translate(" + d.y + "," + d.x + ")";
             });
 
-            var ajuste = isMobile?0:80;
+
+            var ajuste = isMobile?0:82;
             var box = {
               y0 : d3.min(circlePacked.slice(1),d=>d.y-d.r)+ajuste,
               y1 : d3.max(circlePacked.slice(1),d=>d.y+d.r)+ajuste,
@@ -64,18 +65,18 @@ genApp
               x1 : d3.max(circlePacked.slice(1),d=>d.x+d.r)-ajuste
             };
 
-            var vbHeight = box.y1 - box.y0+10,
-                vbWidth = box.x1 - box.x0+10;
+            var vbHeight = box.y1 - box.y0+30,
+                vbWidth = box.x1 - box.x0+30;
+      
+            svg.attr("viewBox",[box.x0-15, box.y0-15, !isMobile?vbHeight:vbWidth, isMobile?vbHeight:vbWidth].join(" "))
 
-            svg.attr("viewBox",[box.x0-5, box.y0-5, !isMobile?vbHeight:vbWidth, isMobile?vbHeight:vbWidth].join(" "))
-
-           /*  svg.append("rect")
-            .attr("fill","none")
-            .attr("stroke", "black")
-              .attr("x", box.x0)
-              .attr("y", box.y0)
-              .attr(!isMobile?"width":"height", box.y1 - box.y0)
-              .attr(isMobile?"width":"height", box.x1 - box.x0); */
+            // svg.append("rect")
+            // .attr("fill","none")
+            // .attr("stroke", "black")
+            //   .attr("x", box.x0)
+            //   .attr("y", box.y0)
+            //   .attr(!isMobile?"width":"height", box.y1 - box.y0)
+            //   .attr(isMobile?"width":"height", box.x1 - box.x0);
 
 
         
@@ -91,7 +92,7 @@ genApp
             .style("fill", "silver");
 
 
-        node.filter(d => d.r>30).append("text")
+        node.append("text")
               .each(d => {
                 const {lines, radius} = fit(d.data.etiqueta, isNaN(d.data.cantidad) ? undefined : d.data.cantidad);
                 d.lines = lines;
