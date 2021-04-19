@@ -80,10 +80,7 @@
                     La velocidad de un juicio puede medirse también por las horas de audiencia que cada tribunal dedica a un debate. Cuantas más horas destinan, los debates llegan más rápido al veredicto.
                </p>
 
-               <p>
-                En febrero de 2021, los juicios tuvieron audiencias que duraron 2:40 promedio. Con audiencias que fueron de 40 minutos a 6 horas. Gran parte de los tribunales dedicó entre 2 y 3 horas por audiencia a los juicios.
-
-            </p>
+            
 
 
             
@@ -95,8 +92,7 @@
                 <h3>Acusados fuera de juicio
                 </h3>
            <p>
-            Un gráfico actualizado muestra a los acusados de cada uno de los debates, así como los que fueron quedando afuera por razones de salud o fallecimiento.
-
+            Un gráfico que permite analizar la situación de los acusados en cada juicio y medir la evolución de quienes resultan desafectados por razones de salud o fallecimiento.
             </p>
 
 
