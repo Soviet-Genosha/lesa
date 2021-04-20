@@ -1,6 +1,6 @@
 
 <section class="text-center"   id="parentPeopleVIZ" ng-controller="PeopleController as homeCtrl">
-    <div class="container-fluid p-0">
+    <div class="container p-0">
             <div class="title text-center">
                 <h3>Acusados</h3>
             </div>
