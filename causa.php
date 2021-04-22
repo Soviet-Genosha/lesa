@@ -62,10 +62,10 @@
                                     padding: 0px 20px;
                                     border-radius: 3px;
                                     margin: 0 -20px;
-                                "  ng-if="juicio.cant_imputados">    
-                                            <h1 class="text-secondary mb-0">{{juicio.cant_imputados}} imputados<br>
+                                "  ng-if="juicio.ep_procesado">    
+                                            <h1 class="text-secondary mb-0">{{juicio.ep_procesado}} imputados<br>
                                             
-                                            <i class="fa fa-user" ng-repeat="x in [].constructor(juicio.cant_imputados) track by $index">
+                                            <i class="fa fa-user" ng-repeat="x in [].constructor(juicio.ep_procesado) track by $index">
                                                 </i></h1>
                                         
                                             <p class="lead text-white"> {{juicio.imputados}} </p>

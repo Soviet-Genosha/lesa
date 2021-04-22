@@ -28,7 +28,7 @@
                 <tr>
                     <th scope="col" ng-click="sortBy('caus_lugar')"><a href=""><span>Localidad</span></a></th>
                     <th scope="col" style="min-width:150px" ng-click="sortBy('caus_nombre_vulgar')"><a href=""><span>Juicio</span></a></th>
-                    <th scope="col" ng-click="sortBy('cant_imputados')" class="text-center"><a href=""><span>Imputados</span></a>
+                    <th scope="col" ng-click="sortBy('ep_procesado')" class="text-center"><a href=""><span>Imputados</span></a>
                     </th>
                     <th scope="col" ng-click="sortBy('cant_victimas')" class="text-center"><a href=""><span>Víctimas</span></a> 
                     </th>
@@ -46,7 +46,7 @@
                 <tr ng-repeat="j in juicios | orderBy:sortElement" ng-cloak>
                     <td>{{j.caus_lugar}}</td>
                     <td>{{j.caus_nombre_vulgar}}</td>
-                    <td class="text-center pb-1">{{j.cant_imputados}}</td>
+                    <td class="text-center pb-1">{{j.ep_procesado}}</td>
                     <td class="text-center pb-1">{{j.cant_victimas}}</td>
 
                     <td class="text-center pb-1">{{j.testigos}}</td>
