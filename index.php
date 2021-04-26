@@ -11,6 +11,20 @@
   <meta name="keywords" content="lesa humanidad, juicios de lesa humanidad, juicios por crímenes de lesa humanidad, dictadura militar, golpe de estado, terrorismo de estado, juicios orales lesa, audiencias lesa, juicios lesa, causas lesa, genocidas, memoria verdad y justicia, estadísticas lesa humanidad,datos lesa humanidad.">
   <meta name="author" content="Secretaria de Derechos Humanos de la Nación, Argentina">
 
+<meta property="og:type" content="article">
+<meta property="og:title" content="Juicios de Lesa Humanidad en tiempo real">
+<meta property="og:url" content="http://www.juiciosdelesahumanidad.ar">
+<meta property="og:site_name" content="Juicios de Lesa Humanidad">
+<meta property="og:description" content="Historias, estadísticas y agenda de los juicios orales por crímenes de lesa humanidad. Seguimiento de las audiencias en vivo. Análisis de la velocidad de los debates. Los juicios en datos.">
+<meta property="og:locale" content="es_ES">
+<meta property="og:image" content="/images/imagen_paralink.jpg">
+<meta property="article:published_time" content="2021-04-26T03:00:00.000Z">
+<meta property="article:modified_time" content="2021-04-26T03:00:00.000Z">
+<meta property="article:author" content="Secretaria de Derechos Humanos de la Nación, Argentina">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="/images/imagen_paralink.jpg">
+
+
   
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
