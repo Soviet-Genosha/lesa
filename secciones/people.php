@@ -5,7 +5,7 @@
                 <h3>Acusados</h3>
             </div>
             <div class="subtitle mt-md-4 col-lg-8 offset-lg-2 text-left" >
-                <p>Este gráfico permite analizar la situación de los acusados en cada juicio y medir la evolución de quienes resultan desafectados por razones de salud o fallecimiento.</p>
+                <p>Este gráfico permite analizar la situación de los acusados en cada juicio y medir quienes resultan desafectados por razones de salud o fallecimiento.</p>
             </div>
             
             <div class="d-block d-sm-none clearfix"><i class="fa fa-arrow-right" ></i></div>

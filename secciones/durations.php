@@ -5,7 +5,7 @@
                 <h3>Monitor de velocidad</h3>
             </div>
             <div class="subtitle mt-md-4 col-lg-8 offset-lg-2 text-left" >
-                <p>Un juicio oral por crímenes de lesa humanidad tarda, en promedio, 2 años y 9 meses desde el requerimiento de elevación a juicio hasta el veredicto, según números del Ministerio Público Fiscal. Los juicios orales actualmente abiertos muestran enormes lejanías con ese promedio. </p>
+                <p>Un juicio oral por crímenes de lesa humanidad tarda, en promedio, 5 meses desde el requerimiento de elevación a juicio hasta la clausura y 2 años y 4 meses desde el comienzo del debate hasta el veredicto, según datos del Ministerio Público Fiscal. El monitor de velocidad permite comparar el ritmo de los juicios orales actualmente abiertos con ambos promedios. </p>
             </div>
 
 
@@ -48,7 +48,7 @@
 
     <section ng-controller="DurationsMetricsController as homeCtrl" class="mb-5">
         <div class="bg-light p-2 ">
-        <h5 class="text-center mb-0">Métricas de duración de audiencias</h5>
+        <h5 class="text-center mb-0">Indicadores de duración de audiencia</h5>
         <p class="text-muted text-center mt-1 ng-binding">Últimos treinta días</p>
         
         <div class="text-center" ng-show="loading">

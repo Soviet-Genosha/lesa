@@ -6,7 +6,10 @@
       <h2 class="text-black font-weight-normal my-0">en tiempo real</h2>
     </div>
     <div class="col-12 col-lg-4 pt-3 px-3 px-sm-0">
-      <p class="lead font-weight-normal">Historias, estadísticas y agenda de los juicios orales por crímenes de lesa humanidad. <br>Seguimiento de las audiencias en vivo.<br> Análisis de la velocidad de los debates.<br> Los juicios en datos. 
+      <p class="lead font-weight-normal">Historias, indicadores, estadísticas y agenda de los juicios orales por crímenes de lesa humanidad.<br>
+Seguimiento de las audiencias en vivo.<br>
+Análisis de la velocidad de los debates.<br>
+Los juicios en datos. 
       </p>
     </div>
   </div>
